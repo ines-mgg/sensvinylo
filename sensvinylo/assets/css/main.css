@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Futura ICG Demi';
+  src: url('/fonts/Futura ICG.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura BK BT';
+  src: url('/fonts/futura_bk_bt_book.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
