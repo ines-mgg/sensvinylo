@@ -57,18 +57,3 @@ const toggleSubMenu2Handler = () => {
             </div>
   </footer>
 </template>
-
-<style scoped>
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s ease;
-}
-.slide-enter-from,
-.slide-leave-to {
-  transform: translateX(-100%);
-}
-.slide-enter-to,
-.slide-leave-from {
-  transform: translateX(0);
-}
-</style>

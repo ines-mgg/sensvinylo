@@ -13,3 +13,20 @@
   font-style: normal;
   font-display: swap;
 }
+
+.active-link {
+  border-bottom: 6px solid #E52828;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+.slide-enter-to,
+.slide-leave-from {
+  transform: translateX(0);
+}
