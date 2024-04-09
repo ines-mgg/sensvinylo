@@ -4,3 +4,9 @@ useSeoMeta({
   description: 'Sensvinylo, le paradis des vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d\'occasion, tous styles confondus.',
 })
 </script>
+
+<template>
+  <div>
+   <h1>Welcome to the homepage</h1>
+  </div>
+</template>

@@ -30,7 +30,7 @@ const isDark = computed({
     class="md:hidden absolute left-0"
   />
     <transition name="slide">
-      <nav v-if="isMenuOpen" class="flex flex-col absolute transition top-0 w-full h-lvh z-100 left-0 gap-14" :class="{'bg-[#030E12FF]': isDark, 'bg-white': !isDark}" >
+      <nav v-if="isMenuOpen" class="flex flex-col absolute transition top-0 w-full h-lvh z-100 left-0 gap-14" :class="{'bg-[#181818]': isDark, 'bg-white': !isDark}" >
         <!-- Close button -->
         <UButton
           icon="i-heroicons-x-mark"
