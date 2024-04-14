@@ -1,4 +1,6 @@
+<script setup lang="ts">
 import AppNavbarMobile from './AppNavbarMobile.vue'
+</script>
 
 <template>
   <header class="flex items-center justify-center mt-2 ml-2">
