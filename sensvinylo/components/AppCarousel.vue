@@ -34,11 +34,13 @@ defineExpose({
     <div class="carousel-inner pt-2" :style="{ 'transform': `translateX(-${currentIndex * 100}%)` }">
       <div v-for="(card, index) in cards" :key="index" class="carousel-item">
         <AppCard
+          :cardId="card.id"
           :cardBanner="card.status"
           :cardImage="card.image"
           :cardTitle="card.title"
           :cardPrice="card.price"
           :cardOldPrice="card.old_price"
+          :cardToken="card.token"
         />
       </div>
     </div>
@@ -54,7 +56,7 @@ defineExpose({
     </button>
   </div>
   <NuxtLink to="/produits">
-    <span class="text-sm bold border-2 p-2">Voir tous les produits</span>
+    <span class="text-sm rounded-lg font-bold border-2 p-2">Voir tous les produits</span>
   </NuxtLink>
 </template>
 

@@ -18,7 +18,7 @@
     {
         "id": 4,
         "name": "Sabrina Carpenter",
-        "description": "Sabrina Annlynn Carpenter est une chanteuse, compositrice et actrice américaine. Elle est née à Lehigh Valley, en Pennsylvanie, et a grandi à New York. Elle a commencé sa carrière en tant qu''actrice, apparaissant dans des séries télévisées telles que Law & Order: Special Victims Unit et The Goodwin Games. Elle a sorti son premier single,"
+        "description": "Sabrina Annlynn Carpenter est une chanteuse, compositrice et actrice américaine. Elle est née à Lehigh Valley, en Pennsylvanie, et a grandi à New York. Elle a commencé sa carrière en tant qu''actrice, apparaissant dans des séries télévisées telles que Law & Order: Special Victims Unit et The Goodwin Games. Elle a sorti son premier single, \"Can't Blame a Girl for Trying\", en 2014, et a depuis sorti plusieurs albums à succès."
     },
     {
         "id": 5,
@@ -212,26 +212,26 @@
       "id": 1,
       "status": "Promotion",
       "image": "/vinyles/Sanstitre-1_ac83f023-0c7d-4244-9f58-5499f020b64f_600x.webp",
-      "title": "Sabrina Carpenter - espresso 7' brown vinyl",
+      "title": "espresso 7\" brown vinyl",
       "artist": 4,
       "year": 2022,
       "genre": 2,
       "price": 10.99,
       "old_price": 14.99,
-      "description": "Sabrina Carpenter''s espresso 7'' brown vinyl is now on promotion. Get it now at a discounted price!",
+      "description": "Après son dernier single \"feather\", \"espresso\" est le prochain triomphe de Sabrina. Vinyle de 7 pouces en brun chocolat. Veuillez noter que la couleur du vinyle peut varier légèrement par rapport à la photo.",
       "token": "sabrina-espresso"
     },
     {
       "id": 2,
       "status": "Nouveauté",
       "image": "/vinyles/LanaDelRey_ea7d36a2-0cb6-48a0-a5a9-c5d4657b0a1a_600x.webp",
-      "title": "Lana Del Rey - Did you know that there's a tunnel under Ocean Blvd (festival edition) - Double vinyle orange",
+      "title": "Did you know that there's a tunnel under Ocean Blvd (festival edition) - Double vinyle orange",
       "artist": 5,
       "year": 2022,
       "genre": 2,
       "price": 39.99,
       "old_price": null,
-      "description": "Discover Lana Del Rey''s latest album, Did you know that there''s a tunnel under Ocean Blvd, in a special festival edition double orange vinyl.",
+      "description": "Did you know that there's a tunnel under Ocean Blvd est le neuvième album studio de la célèbre auteure-compositrice-interprète Lana Del Rey. Il comprend 16 titres et des interludes, avec notamment Father John Misty, Tommy Genesis, Jon Batiste, Bleachers et bien d'autres. Il fait suite aux albums Chemtrails Over The Country Club et Blue Banisters, sortis en 2021. La version festival en édition limitée comprend un artwork alternatif et un vinyle orange \"heavyweight\".",
       "token": "lana-ocean-blvd"
     },
     {
@@ -244,7 +244,7 @@
       "genre": 2,
       "price": 37.99,
       "old_price": null,
-      "description": "Experience the ethereal music of Aurora with her latest album, What Happened To The Heart?, in an exclusive double vinyl edition.",
+      "description": "En avril 2022, AURORA a lu une lettre qui a changé sa vie. Elle a été co-écrite par des militants autochtones, intitulé « Nous sommes la Terre », et appelait à une révolution : une réponse collective au réchauffement climatique – pour « guérir la terre ». Ils ont décrit être connectés à la terre « à travers notre cœur » et à la terre comme « le cœur qui palpite en nous ». La lettre a amené AURORA à réfléchir à une question : What Happened To The Heart? C’est ainsi qu’elle a commencé à étudier des livres sur l’anatomie humaine, voulant comprendre quand et pourquoi la culture occidentale a perdu contact avec le but le plus profond de notre organe le plus vital. What Happened To The Heart? est un voyage de la faiblesse à la force, de l'autodestruction à l'auto-guérison. Un voyage musical poignant et introspectif qui explore la perte de lien spirituel dans la société moderne, le pouvoir de guérison de la vulnérabilité et l'appel à déclencher le changement en réunissant le cœur avec la politique et la croissance personnelle.",
       "token": "aurora-heart"
     },
     {
@@ -257,7 +257,7 @@
       "genre": 3,
       "price": 27.99,
       "old_price": null,
-      "description": "Get the latest album from French rapper Booba, Æ, in a special red vinyl edition.",
+      "description": "Vinyle édition limitée de l''album Æ de Booba. Disponible en rouge.",
       "token": "booba-ae"
     },
     {
@@ -270,7 +270,7 @@
       "genre": 2,
       "price": 44.99,
       "old_price": null,
-      "description": "Discover Zayn''s mesmerizing music with his latest album, Room Under The Stairs, in a double vinyl edition.",
+      "description": "Au cours des six dernières années, Zayn a écrit son quatrième album studio dans son studio en milieu rural en Pennsylvanie. Cet album marque sa sortie la plus personnelle à ce jour, reflétant où il en est dans sa vie tout en explorant les complexités de la guérison, du calme et de la croissance. Il voit également l'artiste qui plie les genres explorer un nouveau son, en s'appuyant sur sa voix émouvante, ses instruments live et son lyrisme poétique en tant qu'auteur-compositeur. L'album a été coproduit par Zayn avec le producteur de disques Dave Cobb, lauréat de 9 Grammy Awards. Ce sera le premier album de Zayn avec Mercury Records.",
       "token": "zayn-room"
     },
     {
@@ -283,7 +283,7 @@
       "genre": 5,
       "price": 29.99,
       "old_price": null,
-      "description": "Experience the soulful voice of Amy Winehouse with the soundtrack album, Back to Black: Songs from the Original Motion Picture, in an exclusive colored vinyl edition.",
+      "description": "La bande originale officielle du nouveau film d'Amy Winehouse, BACK TO BLACK, qui sortira au printemps 2024. Amy Winehouse est largement considérée comme l'une des plus grandes artistes de l'histoire récente.  Avec Plus de 30 millions de disques vendus dans le monde, son album Back to Black, autoproduit et acclamé, sorti en 2006, l'a propulsée au rang de star mondiale et lui a permis de remporter 5 Grammy Awards (un record à l'époque), dont celui du disque de l'année et celui de la chanson de l'année pour pour le single Rehab. Sorti sur un vinyle 1LP Couleur de 140g, couleur pêche, la liste des titres comprend une collection d'enregistrements originaux d'Amy et des morceaux de ses idoles, telles que The Shangri-Las, Billie Holiday et Dinah Washington, qui figurent dans le film, ainsi qu'un nouveau titre original chanté par Nick Cave. Le produit en vinyle est présenté dans une pochette simple avec des intérieurs imprimés comportant une note personnelle du réalisateur, Sam Taylor-Johnson.",
       "token": "amy-back-black"
     },
     {
@@ -296,7 +296,7 @@
         "genre": 2,
         "price": 39.99,
         "old_price": null,
-        "description": "Get the deluxe edition of Olivia Rodrigo''s album, GUTS, in a special splatter vinyl version with a spilled effect.",
+        "description": "L'artiste d'enregistrement primée à trois reprises aux GRAMMY®, Olivia Rodrigo, réédite GUTS sur un vinyle de luxe en édition extrêmement limitée. logé dans une veste gatefold, Présentant des illustrations retravaillées et 5 titres supplémentaires, ce vinyle éclaboussé en édition spéciale est le seul pressage contenant la collection complète des chansons de GUTS. Disponible en précommande maintenant. GUTS a été enregistré avec le producteur Daniel Nigro, qui a également collaboré avec Olivia sur SOUR, son premier album en tête des charts, 4x platine. \"Pour moi, cet album parle de douleurs de croissance et d'essayer de comprendre qui je suis à ce stade de ma vie et exactement ce que je veux dire dans mes chansons.\"",
         "token": "olivia-guts"
     },
     {
@@ -309,14 +309,14 @@
         "genre": 2,
         "price": 34.99,
         "old_price": null,
-        "description": "Le nouvel album de Billie Eilish, Hit Me Hard, est enfin disponible en vinyle. Avec des chansons comme \"Bad Habits\", \"Lost Cause\" et \"NDA\", cet album est un incontournable pour les fans de Billie Eilish.",
+        "description": "Le troisième album studio de Billie Eilish, \"HIT ME HARD AND SOFT\", sorti via Darkroom/Interscope Records, est son œuvre la plus audacieuse à ce jour, une collection de chansons à la fois diversifiée et cohérente - idéalement écoutée dans son intégralité du début à la fin - exactement comme le suggère le titre de l’album ; vous frappe fort et doucement, tant au niveau des paroles que du son, tout en contournant les genres et en défiant les tendances en cours de route. Avec l'aide de son frère et unique collaborateur, FINNEAS, le duo a écrit, enregistré et produit l'album ensemble dans leur ville natale de Los Angeles. Cet album fait suite à ses deux albums à succès « WHEN WE ALL FALL ASLEEP, WHERE DO WE GO ? » et « Happier Than Ever » et vise à développer davantage le monde de Billie Eilish.",
         "token": "hit-me-hard"
     },
     {
         "id": 9,
         "status": "Occasion",
         "image": "/vinyles/Image20240307213115_1028x.webp",
-        "title": "TThe Weeknd - ONE OF THE GIRLS + POPULAR -  VINYLE 7”",
+        "title": "The Weeknd - ONE OF THE GIRLS + POPULAR -  VINYLE 7”",
         "artist": 17,
         "year": 2022,
         "genre": 2,
@@ -329,14 +329,14 @@
     {
         "id": 10,
         "status": "Promotion",
-        "image": "/vinyles/ariana-grande-positions-vinyl-600x.webp",
+        "image": "/vinyles/visuellpcouleur_large.webp",
         "title": "Ariana Grande - POSITIONS - VINYLE",
         "artist": 6,
         "year": 2020,
         "genre": 2,
         "price": 19.99,
         "old_price": 24.99,
-        "description": "Get the latest album from Ariana Grande, Positions, in a special vinyl edition.",
+        "description": "Ariana Grande fait partie de ces artistes précoces que les Etats Unis arrivent à mettre en lumière, comme avant elle Britney Spears ou Justin Timberlake, à travers les productions de sitcom Disney ou Nickelodeon. C’est donc très jeune que la jeune Ariana rencontre le succès mais surtout la rigueur qu’exige une vie rythmée par les tournages, les scènes et les opérations marketing intenses. Bien plus qu’un minois que l’on expose aux enfants d’outre-Atlantique, Mlle Grande a une voix et quelle voix ? C’est en 2013 que la carrière de la chanteuse va prendre un tournant définitif, quand elle sort son premier Album. Sortie fin 2020, « Position » est le 6e opus de l’artiste. Une fois de plus Ariana Grande met tout le monde d’accord et continue d’imposer au paysage Pop international, sa voix unique. Dans cet album la chanteuse s’appuie sur des productions efficaces et des featuring de poids tels que Dodja Cat, Ty Dolla $ign et The Weeknd. Retrouvez cette petite pépite Pop en édition vinyle couleur.",
         "token": "ariana-positions"
     },
     {
@@ -349,7 +349,7 @@
         "genre": 2,
         "price": 49.99,
         "old_price": null,
-        "description": "Experience the re-recorded version of Taylor Swift''s iconic album, Fearless, in a special double vinyl edition.",
+        "description": "Triple Vinyle Fearless (Taylor's Version). Chaque vinyle contient  : 6 chansons dont 6 inédits, des photos et images uniques, 3 rondelles couleur or métallique avec disque photo",
         "token": "taylor-fearless"
     },
     {
@@ -362,7 +362,7 @@
         "genre": 2,
         "price": 39.99,
         "old_price": null,
-        "description": "Get the hit album from Rihanna, Unapologetic, in a special fruit punch opaque double vinyl edition.",
+        "description": "Sortie en novembre 2012, « Unapologetic » est le septième album de Rihanna et se classe à la première place des charts dès sa sortie. En 2014 la chanteuse recevra pour cet opus le Grammy du meilleur album de musique Urbaine. Propulsé par le succès des hits « Right Now », en duo avec le frenchy David Guetta, « Stay » et ce qui restera comme l’hymne d’une génération « Diamonds », « Unapolegetic » confirme le poids de la Diva. Retrouvez ce classique de la scene R’n’b en édition double vinyle 180 grammes",
         "token": "rihanna-unapologetic"
     },
     {
@@ -375,7 +375,7 @@
         "genre": 2,
         "price": 24.99,
         "old_price": null,
-        "description": "Experience the remix album from Lady Gaga, Dawn of Chromatica, in a special transparent vinyl edition.",
+        "description": "Découvrez l'album remix de Lady Gaga, Dawn of Chromatica, dans une édition spéciale en vinyle transparent.",
         "token": "lady-gaga-chromatica"
     },
     {
@@ -388,7 +388,7 @@
       "genre": 2,
       "price": 29.99,
       "old_price": null,
-      "description": "Celebrate the 15th anniversary of Katy Perry''s debut album with this exclusive vinyl edition.",
+      "description": "One Of The Boys Édition 15ème Anniversaire. L'album original en vinyle bleu ciel nuageux dans une pochette en relief. Bonus 7 minutes de 'A Cup of Coffee et 'I Think I'm Ready' sur vinyle violet opaque avec une nouvelle pochette. Calendrier 2024 du tournage de l'album original + des images inédites.",
       "token": "katy-one-of-the-boys"
     },
     {
@@ -401,7 +401,7 @@
       "genre": 2,
       "price": 34.99,
       "old_price": null,
-      "description": "Get the latest album from Nicki Minaj, Pink Friday 2, in a special alternative cover vinyl edition.",
+      "description": "Obtenez le dernier album de Nicki Minaj, Pink Friday 2, dans une édition spéciale en vinyle avec une couverture alternative.",
       "token": "nicki-pink-friday-2"
     },
     {
@@ -414,7 +414,7 @@
       "genre": 1,
       "price": 39.99,
       "old_price": null,
-      "description": "Get the legendary album from Queen, Innuendo, in a special double vinyl edition.",
+      "description": "Innuendo est le dernier album studio de Queen du vivant de Freddie Mercury : Il sort le 4 février 1991, quelques mois seulement avant la disparition de ce dernier. Innuendo est marqué par une atmosphère sombre, empreinte de tristesse et de mélancolie. L'album inclus les titres : Innuendo, qui donne son titre à l'album, I'm Going Slightly Mad, These Are The Days Of Our Lives, et le célèbre The Show Must Go On, sorte de testament de Freddie Mercury.",
       "token": "queen-innuendo"
     },
     {
@@ -427,7 +427,7 @@
       "genre": 1,
       "price": 29.99,
       "old_price": null,
-      "description": "Experience the iconic album from The Beatles, Abbey Road, in a classic vinyl edition.",
+      "description": "Après le succès des rééditions de ‘Sgt. Pepper’s Lonely Hearts Club Band’ et de l’album blanc, voici celle très attendue d’Abbey Road. Bien qu'étant sorti avant Let It Be, Abbey Road est le dernier album enregistré par les Beatles. Après les dissensions intervenues pendant l’enregistrement des sessions qui donneront Let It Be, Les Beatles décident de se réunir et de donner le meilleur d’eux. George Harrison a pour la première fois 2 titres sur un album (Something et Here Comes the Sun), et pour la première fois également une de ses chansons, Something, est la face A du nouveau single. Abbey Road est l’album des Beatles le plus vendu dès sa sortie, avec plus de 30 millions d’exemplaires écoulés. Le groupe crée encore une fois l’évènement et accouche d’un nouveau chef-d’œuvre. Le 26 septembre sera le 50ème anniversaire de la sortie de cet album mythique. A cette occasion l’album a été entièrement remixé par Giles Martin.",
       "token": "beatles-abbey-road"
     },
     {
@@ -440,7 +440,7 @@
       "genre": 3,
       "price": 39.99,
       "old_price": null,
-      "description": "Experience the groundbreaking album from Kendrick Lamar, DAMN., in a special double vinyl edition.",
+      "description": "C’est déjà le quatrième album de Kendrick Lamar et le prodige du rap américain a de quoi effrayer les poids lourds du genre outre-Atlantique. Car, qu’ils se nomment Kanye West ou Drake, ils avaient déjà accueilli avec fébrilité l’excellent To Pimp a Butterfly (2015) et s’étaient rendus au génie du natif de Compton (Californie), lorsque celui-ci avait fini par décrocher le Grammy Award du meilleur album rap en 2016. Victime d’un léger contretemps, DAMN. sort finalement en avril 2017 avec une petite dizaine de jours de retard, mais certains privilégiés ont déjà pu mettre l’eau à la bouche des fans en dévoilant sur les réseaux sociaux quelques extraits. C’est notamment le cas de l’immense basketteur LeBron James, qui s’est fendu d’un coup marketing en créant une « story » sur son compte Instagram, au cours de laquelle il a offert en avant-première (certes en basse définition), pas moins de quatre nouveaux morceaux, dont le furieux « Element » ou le très bon « Feel ». Le geste fut suffisant pour faire grossir l’impatience des fans. Ceux-ci ne seront pas déçus à l’écoute du bien-nommé DAMN. (qui pourrait être traduit par « sacré bon Dieu ! »), comme pour exprimer avec une pointe d’arrogance la conscience de l’énormité du coup réalisé par Kendrick Lamar. Ce dernier réussit en outre une belle opération d’ouverture vers le très grand public en s’octroyant les participations de la star Rihanna, à contre-emploi savoureux dans « Loyalty » et du groupe de rock U2 sur le puissant « XXX ». Démarrant tranquillement avec le soyeux « Blood », aux accents presque soul avec ses cordes sorties des années 1970 et sa basse ronde, DAMN. change de braquet dès la seconde piste avec l’accrocheur « DNA », au groove infectieux sur lequel le flow du rappeur fait mouche avec autorité. Le Californien sait varier les plaisirs puisqu’il se révèle tout aussi inspiré sur le plus lascif « Yah » et retrouve sa verve l’instant d’après sur l’agressif « Humble ». Finalement, il n'y a pas grand-chose à jeter dans une sélection à l'instrumentation organique enthousiasmante, comme sur « Fear » ou « God ». DAMN. s'avère l’une des grandes sorties de l'année sur la planète rap.",
       "token": "kendrick-damn"
     },
     {
@@ -453,7 +453,7 @@
         "genre": 3,
         "price": 39.99,
         "old_price": null,
-        "description": "Get the hit album from Drake, Take Care, in a special double vinyl edition.",
+        "description": "Véritable OVNI dans la galaxie des artistes Urbains des années 2010, le Canadien démontre son sens du tube à chaque sortie. Rapidement signé sur le label de Lil Wayne (Young Money), Drake devient, aux cotés de Kayne West l’un des producteur / Rappeur le plus prolifique et va rapidement inonder les ondes et truster les sommets des charts. Que ce soit pour ses albums comme pour ceux de ses paires, il enchaine les hits iconiques. La sortie en juin 2022 de « Honnestly, Nevermind » démontre une fois de plus le talent du prodige, et à cette occasion replongez dans l’univers de cet artiste unique en redécouvrant « Take Care » et la Mix Tape en collaboration avec Future « What a Time To Be Alive ».",
         "token": "drake-take-care"
     },
     {
@@ -466,7 +466,7 @@
         "genre": 3,
         "price": 64.99,
         "old_price": null,
-        "description": "Experience the greatest hits of Eminem with Curtain Call 2, in a special orange double vinyl edition.",
+        "description": "17 ans après Curtain Call: The Hits, Eminem vient d’annoncer Curtain Call 2, un nouvel album best-off avec les meilleurs titre de ses albums phares comme Relapse (2009), Recovery (2010), The Marshall Mathers LP2 (2013) ou encore Kamikaze (2018) et d'autres encore. Il inclu également sa récente collaboration avec Snoop Dog : From the D 2 the L.B.C. Découvrez le maintenant au format vinyle !",
         "token": "eminem-curtain-call"
     },
     {
@@ -479,7 +479,7 @@
         "genre": 3,
         "price": 39.99,
         "old_price": null,
-        "description": "Get the debut album from J. Cole, Cole World: The Sideline Story, in a special double vinyl edition.",
+        "description": "Le premier album studio du rappeur et producteur J. Cole, sorti le 27 septembre 2011, et a fait ses débuts au numéro un du Billboard 200 américain. Cole World: The Sideline Story présente les chansons à succès « Nobody's Perfect » avec Missy Elliot, « Work Out », « In The Morning » avec Drake, « Lights Please » et bien plus encore !",
         "token": "jcole-cole-world"
     },
     {
@@ -492,20 +492,20 @@
         "genre": 3,
         "price": 59.99,
         "old_price": null,
-        "description": "Experience the classic album from Lil Wayne, Tha Carter III, in a special triple vinyl deluxe edition.",
+        "description": "Le classique Tha Carter III de Lil Wayne fête son quinzième anniversaire dans une nouvelle édition spéciale qui s'accompagne d'un disque bonus, dont l'intégralité du fameux EP \"The Leak\". Le coffret est également accompagné d'une illustration réalisée par l'artiste de la Nouvelle-Orléans Jay.",
         "token": "lil-wayne-carter-iii"
     },
     {
         "id": 23,
         "status": "Promotion",
-        "image": "/vinyles/snoopdog2LP_large.webp",
+        "image": "/vinyles/snoopdog2LP.webp",
         "title": "SNOOP DOGG - R&G (RHYTHM & GANGSTA): THE MASTERPIECE - DOUBLE VINYLE",
         "artist": 23,
         "year": 2004,
         "genre": 3,
         "price": 39.99,
         "old_price": 49.99,
-        "description": "Get the hit album from Snoop Dogg, R&G (Rhythm & Gangsta): The Masterpiece, in a special double vinyl edition.",
+        "description": "Les featuring éclectiques que l'on retrouve sur cet album (Bee Gees / 50 Cents / Pharell Williams / Charlie Wilson), démontrent l'aisance avec laquelle le boss du Gangsta Rap peut se balader sur les beats avec à ses côtés, des artistes issus d'horizons très différents.",
         "token": "snoop-dogg-rhythm-gangsta"
     },
     {
@@ -518,7 +518,7 @@
         "genre": 3,
         "price": 39.99,
         "old_price": null,
-        "description": "Experience the iconic album from 50 Cent, Get Rich or Die Tryin'', in a special double vinyl edition.",
+        "description": "Découvrez l'album emblématique de 50 Cent, Get Rich or Die Tryin', dans une édition spéciale en double vinyle.",
         "token": "50-cent-rich-die"
     }
   ]
