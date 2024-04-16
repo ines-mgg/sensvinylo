@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { onMounted, ref, watchEffect } from 'vue'
 
 const route = useRoute()
-const router = useRouter()
 const item = ref(null)
 const artistItem = ref(null)
 const genreItem = ref(null)
@@ -18,7 +17,10 @@ onMounted(async () => {
   genreItem.value = data.genres.find(genre => genre.id === item.value?.genre)
 
   if (!item.value) {
-    router.replace('/404')
+    throw createError({
+      statusCode: 404,
+      fatal: true
+    });
   }
 })
 

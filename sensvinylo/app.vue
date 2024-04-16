@@ -1,13 +1,13 @@
 <script setup lang="ts">
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+
 useHead({
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' },
   ],
 })
 </script>
-
-import AppFooter from './components/AppFooter.vue';
-import AppHeader from './components/AppHeader.vue';
 
 <template>
   <div>
