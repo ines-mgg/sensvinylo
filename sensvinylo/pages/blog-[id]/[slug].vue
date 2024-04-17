@@ -31,11 +31,9 @@ watchEffect(() => {
 
 <template>
     <section class="flex flex-col items-center my-4 p-2 gap-2">
-        <aside class="flex flex-col self-start mb-4">
-            <span class=" font-bold">{{ item?.title }}</span>
-            <span class="text-xs font-bold italic">par {{item?.author}}, {{ item?.date }}</span>
-        </aside>
-        <img :src="item?.image" :alt="item?.title" class="w-1/2" />
+      <span class="font-bold md:self-center md:text-3xl">{{ item?.title }}</span>
+      <span class="text-xs font-semibold italic md:self-start md:text-base">par {{item?.author}}, {{ item?.date }}</span>
+        <img :src="item?.image" :alt="item?.title" class="w-1/2 mt-4 md:w-[75%] md:h-[75%]" />
         <div v-html="item?.content"></div>
     </section>
 </template>

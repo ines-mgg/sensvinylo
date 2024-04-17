@@ -15,47 +15,34 @@ useSeoMeta({
   </section>
   <!-- carousel products -->
   <section class="flex flex-col items-center my-4">
-    <span class="text-2xl font-bold">Découvrez nos produits</span>
+    <span class="text-2xl font-bold md:text-4xl">Découvrez nos produits</span>
     <AppCarousel />
   </section>
   <!-- sensvinylo history -->
-  <section class="flex flex-col items-center my-4 gap-1" id="history">
+  <section class="flex flex-col items-center my-4 gap-1 md:gap-3" id="history">
     <article class="flex flex-col">
-      <span class="text-2xl font-bold text-center">Sensvinylo, bien plus qu'un simple disquaire</span>
+      <span class="text-xl font-bold text-center md:text-4xl md:mt-3">Sensvinylo, bien plus qu'un simple disquaire</span>
     </article>
     <article class="flex flex-col items-center">
-      <span class="custom-title text-lg bold relative">Notre histoire</span>
-      <p class="text-justify p-4 pt-0">
+      <span class="custom-title text-lg font-semibold relative md:text-3xl">Notre histoire</span>
+      <div class="text-justify p-4 pt-0 md:text-xl">
         Sensvinylo est né d'une passion commune pour la musique et les vinyles. <br>
         Fondé en 2001 par Inès et Stéphane, notre objectif est de partager notre amour du vinyle avec le plus grand nombre. <br>
         Depuis nos débuts, nous avons parcouru un long chemin et nous sommes fiers d'être aujourd'hui l'un des leaders de la vente de 
         vinyles en France. <br>
         Nous proposons une large sélection de vinyles neufs et d'occasion, tous styles confondus, ainsi que des services de qualité à 
         nos clients.
-      </p>
-    </article>
-    <article class="flex flex-col items-center">
-      <span class="custom-title text-lg bold relative">Nos valeurs</span>
-      <p class="text-justify p-4 pt-0 flex flex-col">
-        Chez Sensvinylo, nous sommes convaincus que la musique est un élément essentiel de la vie. <br>
-        C'est pourquoi nous nous engageons à :
-        <aside class="p-4 pt-0 flex flex-col text-sm custom-list">
-        <span class="relative">Offrir une large sélection de vinyles à des prix abordables</span>
-        <span class="relative">Proposer des services de qualité à nos clients</span>
-        <span class="relative">Contribuer à la préservation du patrimoine musical</span>
-        <span class="relative">Promouvoir la culture du vinyle</span>
-        </aside>
-      </p>
-    </article>
-    <article class="flex flex-col items-center">
-      <span class="custom-title text-lg bold relative">Nos engagements</span>
-      <aside class="pb-4 flex flex-col text-sm custom-list">
-        <span class="relative">Proposer des vinyles de qualité</span>
-        <span class="relative">Offrir un service client irréprochable</span>
-        <span class="relative">Respecter l'environnement</span>
-        <span class="relative">Soutenir les artistes et les labels indépendants</span>
-      </aside>
+      </div>
     </article>
   </section>
+
+    <div class="w-full h-36 bg-black  flex flex-col items-center justify-center text-white font-bold dark:bg-transparent dark:border-t dark:border-b dark:border-white">
+      <span>Des vinyles pour tous les goûts et tous les budgets !</span>
+      <span class="font-semibold text-sm">Ne manquez pas nos dernières actualités et promotions</span>
+      <div class="flex justify-between items-center gap-4 mt-4">
+        <NuxtLink to="/produits" class="border-orange-500 border p-2">Voir nos produits →</NuxtLink>
+        <NuxtLink to="/blog" class="border-yellow-400 border p-2">Découvrir notre blog →</NuxtLink>
+      </div>
+    </div>
 
 </template>
