@@ -3,7 +3,7 @@ import AppToggleFooter from './AppToggleFooter.vue';
 </script>
 
 <template>
-  <footer class="border-t-2 border-solid border-t-yellow-400 px-2 mb-2 gap-3 flex flex-col text-lg font-semibold">
+  <footer class="border-t border-solid border-t-black px-2 mb-2 gap-3 flex flex-col text-lg font-semibold">
     <AppToggleFooter 
       :buttonTitle="'À propos'" 
       :links="[{ link: 'equipe', title: 'L\'équipe Sensvinylo' }, 

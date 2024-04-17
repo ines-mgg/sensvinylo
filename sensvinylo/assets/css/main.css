@@ -65,4 +65,10 @@
   top: 50%;
   left: 5%;
   transform: translate(-34px,-50%);
-} 
+}
+
+.label-required::after {
+  content: "*";
+  color: #e52828;
+  margin-left: 2px;
+}

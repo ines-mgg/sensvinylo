@@ -16,7 +16,6 @@ onMounted(async () => {
 
 <template>
   <section class="flex flex-col items-center my-4">
-    <button class="text-xl font-bold">Very sexy bouton filtre à faire</button>
     <article class="mt-4 grid grid-cols-2 gap-4">
       <div v-for="(card, index) in cards" :key="index">
         <AppCard

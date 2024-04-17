@@ -27,7 +27,7 @@ useSeoMeta({
         Les présentes conditions générales de vente (ci-après les "CGV") ont pour 
         objet de définir les modalités de vente en ligne de produits proposés par 
         la société Sensvinylo (ci-après le "Vendeur") sur le site internet 
-        (https://sensvinylo-store.com/fr/) (ci-après le "Site").
+        (https://sensvinylo-store.com/) (ci-après le "Site").
       </p>
     </article>
     <article class="flex flex-col p-4">
