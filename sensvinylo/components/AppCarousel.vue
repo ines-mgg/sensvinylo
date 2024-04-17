@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppCard from './AppCard.vue';
-import { ref, defineExpose, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const cards = ref([])
 onMounted(async () => {
