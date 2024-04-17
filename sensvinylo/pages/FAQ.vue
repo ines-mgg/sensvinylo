@@ -9,11 +9,11 @@ useSeoMeta({
 <template>
   <section class="flex flex-col my-4 gap-1 px-2">
     <article class="flex flex-col items-center">
-      <span class="text-2xl font-bold text-center">Foire aux Questions</span>
+      <span class="text-2xl font-bold text-center md:text-3xl">Foire aux Questions</span>
     </article>
     <AppToggle
       :toggleTitle="'Comment puis-je commander un produit ?'"
-      :toggleDescription="'Vous pouvez commander un produit sur notre site web https://sensvinylo.store/ en créant un compte ou en tant qu\'invité. Il vous suffit de sélectionner le produit que vous souhaitez acheter, de l\'ajouter à votre panier et de suivre les instructions de paiement.'"
+      :toggleDescription="'Vous pouvez commander un produit sur notre site web https://sensvinylo-store.com/ en créant un compte ou en tant qu\'invité. Il vous suffit de sélectionner le produit que vous souhaitez acheter, de l\'ajouter à votre panier et de suivre les instructions de paiement.'"
     />
     <AppToggle
       :toggleTitle="'Quels sont les modes de paiement disponibles ?'"
@@ -41,7 +41,7 @@ useSeoMeta({
     />
     <AppToggle
       :toggleTitle="'Comment puis-je contacter le service client ?'"
-      :toggleDescription="'Vous pouvez contacter notre service client par email à [adresse email du service client] ou par courrier à [adresse postale du service client].'"
+      :toggleDescription="'Vous pouvez contacter notre service client par email à sensvinylo@contact.fr ou par courrier à 242 Rue du Faubourg Saint-Antoine, 75012 Paris.'"
     />
     <AppToggle
       :toggleTitle="'Comment puis-je m\'inscrire à la newsletter ?'"

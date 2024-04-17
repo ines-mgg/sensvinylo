@@ -8,8 +8,8 @@ useSeoMeta({
 </script>
 
 <template>
-      <article class="flex flex-col items-center">
-      <span class="text-2xl font-bold text-center">Nos engagements</span>
+    <article class="flex flex-col items-center">
+      <span class="text-2xl font-bold text-center md:text-3xl">Nos engagements</span>
     </article>
     <AppToggleList
       :toggleTitle="'Notre mission'"

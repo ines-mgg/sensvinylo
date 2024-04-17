@@ -15,36 +15,41 @@ useSeoMeta({
 
 <template>
     <section class="flex flex-col items-center my-4 px-2">
-        <span class="text-center text-gray-500 text-sm italic dark:text-white">Sensvinylo est à votre disposition pour répondre à toutes vos questions et vous aider à trouver le vinyle de vos rêves.</span>
-        <p class="text-justify px-3">
+        <span class="text-center text-gray-500 text-sm italic dark:text-white md:text-base">Sensvinylo est à votre disposition pour répondre à toutes vos questions et vous aider à trouver le vinyle de vos rêves.</span>
+        <p class="text-justify px-3 md:text-lg">
             N'hésitez pas à nous joindre directement via le formulaire de contact ci-dessous, ou par e-mail à sensvinylo@contact.fr. <br>
             Nous vous répondrons dans les meilleurs délais.
         </p>
     </section>
     <section class="flex flex-col items-center my-4 px-2">
         <form class="flex flex-col gap-4 items-center w-full max-w-lg p-4" @submit.prevent="submitForm">
-            <fieldset class="flex justify-center font-bold">
-                <div>
+            <fieldset class="flex justify-center font-bold md:flex-col md:w-full">
+                <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Nom</label>
-                    <input required type="text" placeholder="Doe" class="border rounded border-[#443630] dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal">
+                    <input required type="text" placeholder="Doe" 
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
                 </div>
-                <div>
+                <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Prénom</label>
-                    <input required type="text" placeholder="Jane" class="border rounded border-[#443630] dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal">
+                    <input required type="text" placeholder="Jane" 
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
                 </div>
             </fieldset>
-            <fieldset class="flex justify-center font-bold">
-                <div>
+            <fieldset class="flex justify-center font-bold md:flex-col md:w-full">
+                <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Email</label>
-                    <input required type="email" placeholder="Votre email" class="border rounded border-[#443630] dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal">
+                    <input required type="email" placeholder="Votre email" 
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
                 </div>
-                <div>
+                <div class="md:flex md:flex-col md:w-full">
                     <label class="">Téléphone</label>
-                    <input type="tel" placeholder="06XXXXXXXX" class="border rounded border-[#443630] dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal">
+                    <input type="tel" placeholder="06XXXXXXXX" 
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
                 </div>
             </fieldset>
             <label class="label-required font-bold self-start">Votre message</label>
-            <textarea cols="50" rows="100" maxlength="500" minlength="10" class="border rounded border-[#443630] dark:border-white dark:border-2 h-48 w-max text-sm pl-1 font-normal" required></textarea>
+            <textarea cols="50" rows="100" maxlength="500" minlength="10" 
+            class="border rounded border-black dark:border-white dark:border-2 h-48 w-max text-sm pl-1 font-normal md:w-full" required></textarea>
             <button type="submit" class="bg-orange-500 border-orange-500 font-bold rounded-md w-full p-2">Envoyer</button>
         </form>
         <div v-if="showMessage" class="flex flex-col items-center gap-1 text-sm text-black">

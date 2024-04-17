@@ -8,8 +8,8 @@ useSeoMeta({
 <template>
 
   <section class="flex flex-col items-center my-4">
-    <span class="text-2xl font-bold">Mentions légales</span>
-    <p class="text-justify px-4">
+    <span class="text-2xl font-bold md:text-3xl">Mentions légales</span>
+    <p class="text-justify px-4 md:self-start md:text-xl">
         Sensvinylo <br>
         Société par actions simplifiée <br>
         Siège social: 242 Rue du Faubourg Saint-Antoine, 75012 Paris <br>
@@ -19,10 +19,10 @@ useSeoMeta({
         Contact: sensvinylo@contact.fr  <br>
     </p>
   </section>
-  <section class="flex flex-col items-center my-4">
-    <span class="text-2xl font-bold">Conditions générales de vente</span>
+  <section class="flex flex-col items-center my-4 md:items-start">
+    <span class="text-2xl font-bold md:text-3xl md:self-center">Conditions générales de vente</span>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 1 - Objet</span>
+      <span class="text-lg font-semibold md:text-xl">Article 1 - Objet</span>
       <p class="text-justify pt-0">
         Les présentes conditions générales de vente (ci-après les "CGV") ont pour 
         objet de définir les modalités de vente en ligne de produits proposés par 
@@ -31,7 +31,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 2 - Prix</span>
+      <span class="text-lg font-semibold md:text-xl">Article 2 - Prix</span>
       <p class="text-justify pt-0">
         Les prix des produits sont indiqués en euros (€) toutes taxes comprises 
         (TTC), hors frais de livraison. Les frais de livraison sont indiqués sur 
@@ -39,7 +39,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 3 - Commande</span>
+      <span class="text-lg font-semibold md:text-xl">Article 3 - Commande</span>
       <p class="text-justify pt-0">
         Le client peut passer commande sur le Site en créant un compte ou en tant 
         qu'invité. Le client doit renseigner les informations nécessaires à la 
@@ -47,14 +47,14 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 4 - Paiement</span>
+      <span class="text-lg font-semibold md:text-xl">Article 4 - Paiement</span>
       <p class="text-justify pt-0">
         Le paiement des commandes s'effectue par carte bancaire, PayPal ou virement 
         bancaire. Le paiement est sécurisé par un système de paiement en ligne agréé.
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 5 - Livraison</span>
+      <span class="text-lg font-semibold md:text-xl">Article 5 - Livraison</span>
       <p class="text-justify pt-0">
         Les commandes sont livrées en France métropolitaine dans un délai de 3 à 5 
         jours ouvrables à compter de la validation de la commande. Les livraisons 
@@ -62,7 +62,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 6 - Droit de rétractation</span>
+      <span class="text-lg font-semibold md:text-xl">Article 6 - Droit de rétractation</span>
       <p class="text-justify pt-0">
         Le client dispose d'un délai de 14 jours à compter de la réception de sa 
         commande pour exercer son droit de rétractation sans avoir à justifier de 
@@ -73,7 +73,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 7 - Remboursement</span>
+      <span class="text-lg font-semibold md:text-xl">Article 7 - Remboursement</span>
       <p class="text-justify pt-0">
         En cas de rétractation, le Vendeur remboursera au client le montant total de 
         sa commande, y compris les frais de livraison, dans un délai de 14 jours à 
@@ -81,7 +81,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 8 - Garantie légale</span>
+      <span class="text-lg font-semibold md:text-xl">Article 8 - Garantie légale</span>
       <p class="text-justify pt-0">
         Les produits sont garantis contre les vices cachés conformément aux articles 
         L.217-1 et suivants du Code de la consommation. Le client peut exercer son 
@@ -89,7 +89,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 9 - Propriété intellectuelle</span>
+      <span class="text-lg font-semibold md:text-xl">Article 9 - Propriété intellectuelle</span>
       <p class="text-justify pt-0">
         Le Site et tous ses éléments (textes, images, vidéos, etc.) sont protégés par 
         le droit d'auteur et le droit de la propriété intellectuelle. Toute 
@@ -99,7 +99,7 @@ useSeoMeta({
       </p>
     </article>
     <article class="flex flex-col p-4">
-      <span class="text-lg font-semibold">Article 10 - Droit applicable et juridiction compétente</span>
+      <span class="text-lg font-semibold md:text-xl">Article 10 - Droit applicable et juridiction compétente</span>
       <p class="text-justify pt-0">
         Les présentes CGV sont régies par le droit français. En cas de litige, les 
         tribunaux français seront seuls compétents.

@@ -11,8 +11,8 @@ const props = defineProps({
 </script>
 
 <template>
-    <section class="flex flex-col items-center border-b border-gray-400 gap-1">
-        <img :src="cardImage" :alt="cardTitle" class="self-center w-48 h-48 my-2">
+    <section class="flex flex-col items-center border-b border-gray-400 gap-1 md:text-xl">
+        <img :src="cardImage" :alt="cardTitle" class="self-center w-48 h-48 my-2 md:w-[75%] md:h-[75%]">
         <aside class="flex flex-col self-start">
             <span class="font-bold">{{ cardTitle }}</span>
             <span class="font-semibold">{{ cardDate }}</span>
