@@ -17,7 +17,7 @@ import AppToggleFooter from './AppToggleFooter.vue';
       <span class="mb-2">Joindre notre newsletter</span>
       <section class="flex gap-2">
         <input type="email" placeholder="Votre email" class="border border-solid rounded border-black dark:border-white dark:border-2 mr-1 h-10 w-max text-sm pl-1"/>
-        <button class="border-yellow-400 border rounded-lg text-center font-bold px-3 ">S'inscrire</button>
+        <button class="border-yellow-400 border rounded-lg text-center font-bold px-3" aria-label="Inscription à la newsletter">S'inscrire</button>
       </section>
     </div>
   </footer>

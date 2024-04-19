@@ -16,18 +16,18 @@ const isDark = computed({
 </script>
 
 <template>
-       <UButton
+    <UButton
     icon="i-heroicons-bars-3"
     size="xl"
     color="white"
     variant="ghost"
     @click="toggleMenu"
     class="md:hidden absolute left-0"
+    aria-label="Ouvrir le menu"
   />
 
     <transition name="slide">
       <nav v-if="isMenuOpen" class="flex flex-col absolute transition top-0 w-full h-lvh z-100 left-0 gap-14 z-[1]" :class="{'bg-[#181818]': isDark, 'bg-white': !isDark}" >
-        <!-- Close button -->
         <UButton
           icon="i-heroicons-x-mark"
           size="xl"
@@ -35,24 +35,23 @@ const isDark = computed({
           variant="ghost"
           @click="toggleMenu"
           class="self-start mt-2 ml-2"
+          aria-label="Fermer le menu"
         />
 
           <section class="flex flex-col items-center justify-center font-bold text-3xl text-center gap-16" id="main-links">
-            <!-- Pages principales -->
-            <NuxtLink to="/" activeClass="active-link" class="w-max">Accueil</NuxtLink>
-            <NuxtLink to="/produits" activeClass="active-link" class="w-max">Notre catalogue</NuxtLink>
-            <NuxtLink to="/magasins" activeClass="active-link" class="w-max">Nos magasins</NuxtLink>
-            <NuxtLink to="/blog" activeClass="active-link" class="w-max">Notre blog</NuxtLink>
+            <NuxtLink to="/" activeClass="active-link" class="w-max" aria-label="Voir la page Accueil">Accueil</NuxtLink>
+            <NuxtLink to="/produits" activeClass="active-link" class="w-max" aria-label="Voir la page Notre catalogue">Notre catalogue</NuxtLink>
+            <NuxtLink to="/magasins" activeClass="active-link" class="w-max" aria-label="Voir la page Nos magasins">Nos magasins</NuxtLink>
+            <NuxtLink to="/blog" activeClass="active-link" class="w-max" aria-label="Voir la page Notre blog">Notre blog</NuxtLink>
           </section>
 
           <section class="flex justify-between mt-auto mb-1 px-1">
-            <!-- Dark mode button & socials -->
               <ClientOnly>
                 <UButton
                   :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
                   color="gray"
                   variant="ghost"
-                  aria-label="Theme"
+                  aria-label="Changer le thème du site"
                   @click="isDark = !isDark"
                 />
                 <template #fallback>
@@ -60,7 +59,7 @@ const isDark = computed({
                 </template>
               </ClientOnly>
 
-                <a href="https://github.com/ines-mgg/sensvinylo.git">
+                <a href="https://github.com/ines-mgg/sensvinylo.git" aria-label="Lien vers le site GitHub">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 64 64">
                     <circle cx="32" cy="32" r="23" fill="#9c34c2"></circle>
                     <ellipse cx="32" cy="61" opacity=".3" rx="19" ry="3"></ellipse>
@@ -70,8 +69,6 @@ const isDark = computed({
                   </svg>
               </a>
           </section>
-
-
       </nav>
     </transition> 
 </template>

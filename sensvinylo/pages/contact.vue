@@ -27,30 +27,30 @@ useSeoMeta({
                 <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Nom</label>
                     <input required type="text" placeholder="Doe" 
-                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full" aria-label="Votre nom">
                 </div>
                 <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Prénom</label>
                     <input required type="text" placeholder="Jane" 
-                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full" aria-label="Votre pprénom">
                 </div>
             </fieldset>
             <fieldset class="flex justify-center font-bold md:flex-col md:w-full">
                 <div class="md:flex md:flex-col md:w-full">
                     <label class="label-required">Email</label>
                     <input required type="email" placeholder="Votre email" 
-                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full" aria-label="Votre adresse mail">
                 </div>
                 <div class="md:flex md:flex-col md:w-full">
                     <label class="">Téléphone</label>
                     <input type="tel" placeholder="06XXXXXXXX" 
-                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full">
+                    class="border rounded border-black dark:border-white dark:border-2 h-10 w-max text-sm pl-1 font-normal md:w-full" aria-label="Votre numéro de téléphone">
                 </div>
             </fieldset>
             <label class="label-required font-bold self-start">Votre message</label>
             <textarea cols="50" rows="100" maxlength="500" minlength="10" 
-            class="border rounded border-black dark:border-white dark:border-2 h-48 w-max text-sm pl-1 font-normal md:w-full" required></textarea>
-            <button type="submit" class="bg-orange-500 border-orange-500 font-bold rounded-md w-full p-2">Envoyer</button>
+            class="border rounded border-black dark:border-white dark:border-2 h-48 w-max text-sm pl-1 font-normal md:w-full" required aria-label="Entrez votre message"></textarea>
+            <button type="submit" class="bg-orange-500 border-orange-500 font-bold rounded-md w-full p-2 text-black" aria-label="Envoyer votre message">Envoyer</button>
         </form>
         <div v-if="showMessage" class="flex flex-col items-center gap-1 text-sm text-black">
             <svg
@@ -78,7 +78,7 @@ useSeoMeta({
                 </path>
             </svg>
             <span class="text-center">Nous vous remercions de votre intérêt pour Sensvinylo !</span>
-            <span class="text-gray-400">Nous vous répondrons dans les meilleurs délais.</span>
+            <span class="text-gray-400 dark:text-white">Nous vous répondrons dans les meilleurs délais.</span>
         </div>
     </section>
     <!-- <section class="flex flex-col items-center my-4 px-2">

@@ -32,6 +32,6 @@ const handleError = () => clearError({ redirect: '/' })
     </svg>
       <span class="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 to-orange-500">{{ error?.statusCode }}</span>
       <span class="text-2xl font-medium">{{ error?.statusCode === 404 ? 'Page introuvable' : 'Oups ! Une erreur s\'est produite' }}</span>
-      <button @click="handleError" class="bg-yellow-400 border-yellow-400 border rounded-lg text-center font-bold p-3">Retour à Sensvinylo</button>
+      <button @click="handleError" class="bg-yellow-400 border-yellow-400 border rounded-lg text-center font-bold p-3 text-black">Retour à Sensvinylo</button>
   </section>
 </template>
