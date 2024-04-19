@@ -48,7 +48,7 @@ const decreaseQuantity = () => {
 
 <template>
     <section class="flex flex-col items-center my-4 p-2">
-        <img :src="item?.image" :alt="item?.title" class="w-1/2 md:h-1/2" />
+        <img :src="item?.image" :alt="item?.title" class="w-1/2 md:h-1/2" height="500" width="500"/>
         <div v-if="item?.status === 'Nouveauté'" class="bg-orange-500 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
         <div v-else-if="item?.status === 'Promotion'" class="bg-yellow-400 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
         <div v-else-if="item?.status === 'Occasion'" class="bg-red-600 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
