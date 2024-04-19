@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    quality: 80,
+    quality: 100,
     format: ["webp"],
     screens: {
       xs: 320,
