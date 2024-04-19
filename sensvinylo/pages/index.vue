@@ -10,7 +10,11 @@ useSeoMeta({
 <template>
   <!-- banner and slogan -->
   <section class="flex flex-col items-center justify-center my-4">
-    <NuxtImg src="/banner.webp" alt="Sensvinylo bannière et slogan" sizes="sm:100vw md:100vw"/>
+    <NuxtPicture
+      src="/banner.webp"
+      :imgAttrs="{alt:'image pour la bannière du slogan'}"
+    />
+
     <h1 class="text-lg md:text-4xl font-bold text-center absolute bg-gray-900 p-2 text-white">Sensvinylo, La passion du vinyle à votre portée.</h1>
   </section>
   <!-- carousel products -->
@@ -19,7 +23,7 @@ useSeoMeta({
     <AppCarousel />
   </section>
   <!-- sensvinylo history -->
-  <section class="flex flex-col items-center my-4 gap-1 md:gap-3">
+  <section class="flex flex-col items-center my-6 gap-1 p-2 md:gap-3">
     <span class="text-xl font-bold text-center md:text-4xl md:mt-3">Sensvinylo, bien plus qu'un simple disquaire</span>
       <span class="custom-title text-lg font-semibold relative md:text-3xl">Notre histoire</span>
       <div class="text-justify p-4 pt-0 md:text-2xl">
