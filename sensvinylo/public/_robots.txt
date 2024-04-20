@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: 
+Sitemap: https://sensvinylo-store.com/sitemap.xml

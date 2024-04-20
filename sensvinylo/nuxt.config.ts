@@ -12,6 +12,13 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: "fr" },
     },
   },
+  site: {
+    url: "https://sensvinylo-store.com/",
+    name: "Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France",
+    defaultLocale: "fr",
+    trailingSlash: true,
+  },
+  robots: {},
   image: {
     quality: 100,
     format: ["webp"],
@@ -25,7 +32,7 @@ export default defineNuxtConfig({
       "2xl": 1536,
     },
   },
-  modules: ["@nuxt/ui", "@nuxt/image"],
+  modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/seo"],
   css: ["~/assets/css/main.css"],
   plugins: ["~/plugins/error-handler.ts"],
 });

@@ -18,5 +18,8 @@
     "vue": "^3.4.21",
     "vue-awesome-swiper": "^5.0.1",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/seo": "^2.0.0-rc.10"
   }
 }

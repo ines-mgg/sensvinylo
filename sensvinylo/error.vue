@@ -7,11 +7,6 @@ useHead({
   ],
 })
 
-useSeoMeta({ 
-  title: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
-  description: 'Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d\'occasion, tous styles confondus. Les vinyles de vos artistes préférés en exclusivité chez Sensvinylo.'
-})
-
 const props = defineProps({
   error: Object as () => NuxtError
 })
