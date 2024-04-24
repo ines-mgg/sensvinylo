@@ -29,13 +29,13 @@ const props = defineProps({
         <transition name="slide">
             <div v-if="isToggleOpen" class="flex flex-col gap-1 text-gray-500">
                 <div v-for="(link, index) in links" :key="index">
-                    <NuxtLink :to="`/${link.link}`" class="w-max" :aria-label="`Voir la page ${link.title}`">{{ link.title }}</NuxtLink>
+                    <NuxtLink :to="`/${link.link}/`" class="w-max" :aria-label="`Voir la page ${link.title}`">{{ link.title }}</NuxtLink>
                 </div>
             </div>
         </transition>
         <div class="hidden md:flex flex-col gap-1 text-gray-500 text-sm">
                 <div v-for="(link, index) in links" :key="index">
-                    <NuxtLink :to="`/${link.link}`" class="w-max" :aria-label="`Voir la page ${link.title}`">{{ link.title }}</NuxtLink>
+                    <NuxtLink :to="`/${link.link}/`" class="w-max" :aria-label="`Voir la page ${link.title}`">{{ link.title }}</NuxtLink>
                 </div>
         </div> 
     </section>
