@@ -46,7 +46,7 @@ useSeoMeta({
       <span class="font-semibold text-sm md:text-xl">Ne manquez pas nos dernières actualités et promotions</span>
       <div class="flex justify-between items-center gap-4 mt-4 md:gap-11 md:text-xl">
         <NuxtLink to="/produits" class="border-orange-500 border p-2 md:p-4">Voir nos produits →</NuxtLink>
-        <NuxtLink to="/blog" class="border-yellow-400 border p-2 md:p-4">Découvrir notre blog →</NuxtLink>
+        <NuxtLink to="/blogs" class="border-yellow-400 border p-2 md:p-4">Découvrir notre blog →</NuxtLink>
       </div>
     </div>
 
