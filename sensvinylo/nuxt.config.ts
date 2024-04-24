@@ -65,4 +65,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/seo"],
   css: ["~/assets/css/main.css"],
   plugins: ["~/plugins/error-handler.ts"],
+  tailwindcss: {
+    configPath: "~/tailwind.config.ts",
+  },
 });
