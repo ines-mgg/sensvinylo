@@ -67,7 +67,7 @@ defineExpose({
         </svg>
     </button>
   </div>
-  <NuxtLink to="/produits" class="md:mt-4" aria-label="Voir la page Notre catalogue">
+  <NuxtLink to="/produits/" class="md:mt-4" aria-label="Voir la page Notre catalogue">
     <span class="text-sm rounded-lg font-bold border-2 p-2 md:text-2xl md:p-3">Voir tous les produits</span>
   </NuxtLink>
 </template>

@@ -40,9 +40,9 @@ const isDark = computed({
 
           <section class="flex flex-col items-center justify-center font-bold text-3xl text-center gap-16" id="main-links">
             <NuxtLink to="/" activeClass="active-link" class="w-max" aria-label="Voir la page Accueil">Accueil</NuxtLink>
-            <NuxtLink to="/produits" activeClass="active-link" class="w-max" aria-label="Voir la page Notre catalogue">Notre catalogue</NuxtLink>
-            <NuxtLink to="/magasins" activeClass="active-link" class="w-max" aria-label="Voir la page Nos magasins">Nos magasins</NuxtLink>
-            <NuxtLink to="/blogs" activeClass="active-link" class="w-max" aria-label="Voir la page Notre blog">Notre blog</NuxtLink>
+            <NuxtLink to="/produits/" activeClass="active-link" class="w-max" aria-label="Voir la page Notre catalogue">Notre catalogue</NuxtLink>
+            <NuxtLink to="/magasins/" activeClass="active-link" class="w-max" aria-label="Voir la page Nos magasins">Nos magasins</NuxtLink>
+            <NuxtLink to="/blogs/" activeClass="active-link" class="w-max" aria-label="Voir la page Notre blog">Notre blog</NuxtLink>
           </section>
 
           <section class="flex justify-between mt-auto mb-1 px-1">
