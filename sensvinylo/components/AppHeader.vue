@@ -31,7 +31,7 @@ const isDark = computed({
       <NuxtLink to="/" activeClass="active-link" class="w-max" aria-label="Voir la page Accueil">Accueil</NuxtLink>
       <NuxtLink to="/produits" activeClass="active-link" class="w-max" aria-label="Voir la page Notre catalogue">Notre catalogue</NuxtLink>
       <NuxtLink to="/magasins" activeClass="active-link" class="w-max" aria-label="Voir la page Nos magasins">Nos magasins</NuxtLink>
-      <NuxtLink to="/blog" activeClass="active-link" class="w-max" aria-label="Voir la page Notre blog">Notre blog</NuxtLink>
+      <NuxtLink to="/blogs" activeClass="active-link" class="w-max" aria-label="Voir la page Notre blog">Notre blog</NuxtLink>
       <ClientOnly>
         <UButton
           :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"

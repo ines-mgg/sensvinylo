@@ -12,7 +12,7 @@ useSeoMeta({
     <p class="text-justify px-4 md:self-start md:text-xl">
         Sensvinylo <br>
         Société par actions simplifiée <br>
-        Siège social: 242 Rue du Faubourg Saint-Antoine, 75012 Paris <br>
+        Siège social: 270 Rue du Faubourg Saint-Antoine, 75012 Paris <br>
         Capital social: 36.000.000 € <br>
         RCS: Paris B 000 000 000 <br>
         Hébergeur: sensvinylo-store.com <br>

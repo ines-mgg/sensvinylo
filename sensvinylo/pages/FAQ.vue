@@ -41,7 +41,7 @@ useSeoMeta({
     />
     <AppToggle
       :toggleTitle="'Comment puis-je contacter le service client ?'"
-      :toggleDescription="'Vous pouvez contacter notre service client par email à sensvinylo@contact.fr ou par courrier à 242 Rue du Faubourg Saint-Antoine, 75012 Paris.'"
+      :toggleDescription="'Vous pouvez contacter notre service client par email à sensvinylo@contact.fr ou par courrier à 270 Rue du Faubourg Saint-Antoine, 75012 Paris.'"
     />
     <AppToggle
       :toggleTitle="'Comment puis-je m\'inscrire à la newsletter ?'"
