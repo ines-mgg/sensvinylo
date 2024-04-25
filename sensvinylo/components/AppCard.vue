@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <NuxtLink :to="`/vinyle/${props.cardId}-${props.cardToken}`" class="flex flex-col items-center">
+    <NuxtLink :to="`/vinyle-${props.cardId}/${props.cardToken}`" class="flex flex-col items-center">
         <aside v-if="cardBanner === 'Nouveauté'" class="bg-orange-500 w-44 text-center font-semibold md:w-1/2 md:text-xl text-black">{{ props.cardBanner}}</aside>
         <aside v-else-if="cardBanner === 'Promotion'" class="bg-yellow-400 w-44 text-center font-semibold md:w-1/2 md:text-xl text-black">{{ props.cardBanner}}</aside>
         <aside v-else-if="cardBanner === 'Occasion'" class="bg-red-600 w-44 text-center font-semibold md:w-1/2 md:text-xl text-black">{{ props.cardBanner}}</aside>

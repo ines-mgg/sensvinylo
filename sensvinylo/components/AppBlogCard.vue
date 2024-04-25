@@ -18,6 +18,6 @@ const props = defineProps({
             <span class="font-semibold">{{ cardDate }}</span>
         </aside>
         <p class="text-justify text-gray-500">{{ cardSynopsis }}</p>
-        <NuxtLink :to="`/blog/${props.cardId}-${props.cardSlug}`" class="self-end mt-2 mr-2">Voir →</NuxtLink>
+        <NuxtLink :to="`/blog-${props.cardId}/${props.cardSlug}`" class="self-end mt-2 mr-2">Voir →</NuxtLink>
     </section>
 </template>
