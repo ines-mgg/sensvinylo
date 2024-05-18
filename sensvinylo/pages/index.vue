@@ -10,14 +10,13 @@ useSeoMeta({
 <template>
   <!-- banner and slogan -->
   <section class="flex flex-col items-center justify-center my-4">
-  <!-- <NuxtPicture
+  <NuxtPicture
       src="/banner.webp"
       :imgAttrs="{alt:'image pour la bannière du slogan'}"
       width="1470"
       height="773"
       sizes="sm:200px md:500px lg:1024"
-      /> -->
-    <img src="/banner.webp" alt="image pour la bannière du slogan" width="1470" height="773">
+      />
     <h1 class="md:text-4xl font-bold text-center absolute bg-gray-900 p-2 text-white">
       Sensvinylo, La passion du vinyle à votre portée.
     </h1>

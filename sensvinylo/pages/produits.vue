@@ -16,7 +16,7 @@ onMounted(async () => {
 
 <template>
   <section class="flex flex-col items-center my-4">
-    <article class="mt-4 grid grid-cols-2 gap-2 px-2 xl:grid-cols-3">
+    <article class="mt-4 grid grid-cols-2 gap-2 px-2 md:grid-cols-3 xl:grid-cols-4">
       <div v-for="(card, index) in cards" :key="index">
         <AppCard
           :cardId="card.id"
