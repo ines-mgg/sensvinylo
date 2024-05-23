@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppBlogCard from '~/components/AppBlogCard.vue';
 
-useSeoMeta({ 
+useSeoMeta({
   title: 'Découvrez les articles de blog signé Sensvinylo',
   description: 'Lisez les derniers articles du blog Sensvinylo. Retrouvez des conseils et astuces pour les collectionneurs de vinyles, des interviews d\'artistes et des actualités du monde du vinyle.',
 })
@@ -15,24 +15,17 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="flex flex-col items-center my-4 gap-2 px-2">
-    <div v-for="(card, index) in cards" :key="index">
-      <AppBlogCard
-        :cardId="card.id"
-        :cardTitle="card.title"
-        :cardDate="card.date"
-        :cardSynopsis="card.synopsis"
-        :cardImage="card.image"
-        :cardSlug="card.slug"
-      />
-    </div>
-      <div class="my-4 text-center">
-        <span class="p-2">1</span> 
-        <span class="p-2">2</span> 
-        <span class="p-2">3</span> 
-        <span class="deco">…</span> 
-        <span class="p-2">13</span> 
-        <span class="next">Suivant »</span>
+  <section class="flex flex-col items-center my-4 md:items-start">
+    <article class="grid md:grid-cols-2 xl:grid-cols-3">
+      <div v-for="(card, index) in cards" :key="index">
+        <AppBlogCard 
+            :cardTitle="card.title" 
+            :cardAuthor="card.author"
+            :cardDate="card.date"
+            :cardImage="card.image" 
+            :cardSlug="card.slug"
+          />
       </div>
+    </article>
   </section>
 </template>

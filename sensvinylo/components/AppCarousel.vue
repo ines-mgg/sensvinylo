@@ -34,7 +34,6 @@ defineExpose({
     <div class="carousel-inner pt-2" :style="{ 'transform': `translateX(-${currentIndex * 100}%)` }">
       <div v-for="(card, index) in cards" :key="index" class="carousel-item">
         <AppCard
-          :cardId="card.id"
           :cardBanner="card.status"
           :cardImage="card.image"
           :cardTitle="card.title"

@@ -56,3 +56,27 @@
   color: #e52828;
   margin-left: 2px;
 }
+
+.timeline {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: max-content;
+  max-width: 100%;
+}
+
+.timeline-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #e52828;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
