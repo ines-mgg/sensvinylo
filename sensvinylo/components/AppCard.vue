@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps({
-    cardId: Number,
     cardBanner: String,
     cardImage: String,
     cardTitle: String,
@@ -42,7 +41,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <NuxtLink :to="`/vinyle-${props.cardId}/${props.cardToken}`" class="flex flex-col items-center">
+    <NuxtLink :to="`/vinyle/${props.cardToken}`" class="flex flex-col items-center">
         <aside v-if="cardBanner === 'Nouveauté'"
             class="bg-orange-500 w-44 text-center font-semibold md:w-1/2 md:text-xl text-black">{{ props.cardBanner }}
         </aside>
@@ -54,8 +53,9 @@ onUnmounted(() => {
         </aside>
         <aside v-else class="w-44 text-center font-semibold md:w-1/2 md:text-xl text-black"> ‎
         </aside>
-        <NuxtPicture :src="cardImage" :imgAttrs="{ alt: cardTitle, class: 'self-center rounded-full my-2' }"
-            :width="width" :height="height" sizes="sm:100vw md:100vw" />
+        <NuxtPicture :src="cardImage"
+            :imgAttrs="{ alt: cardTitle, class: 'self-center rounded-full my-2', loading: 'lazy' }" :width="width"
+            :height="height" sizes="sm:100vw md:100vw" />
         <section class="self-center flex flex-col items-center md:text-2xl">
             <span class="font-bold text-center">{{ props.cardTitle }}</span>
             <div v-if="cardBanner === 'Promotion' && cardOldPrice !== ''" class="flex gap-1 font-semibold">
