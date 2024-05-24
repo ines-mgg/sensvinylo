@@ -11,6 +11,7 @@ useHead({
 
 <template>
   <div>
+    <VitePwaManifest />
     <AppHeader />
     <NuxtPage />
     <AppFooter />
