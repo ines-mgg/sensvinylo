@@ -5,6 +5,7 @@ import AppHeader from './components/AppHeader.vue';
 useHead({
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' },
+    { rel: 'manifest', href: '/manifest.webmanifest' },
   ],
 })
 </script>
