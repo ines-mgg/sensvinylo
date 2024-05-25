@@ -23,21 +23,50 @@ useSeoMeta({
   </section>
   <!-- sensvinylo history -->
   <section class="flex flex-col items-center my-6 gap-1 p-2 md:gap-3">
-    <span class="text-xl font-bold text-center md:text-4xl md:mt-3">Sensvinylo, bien plus qu'un simple disquaire</span>
-    <span class="custom-title text-lg font-semibold relative md:text-3xl">Notre histoire</span>
-    <div class="text-justify p-4 pt-0 md:text-2xl">
-      Sensvinylo est né d'une passion commune pour la musique et les vinyles. <br>
-      Fondé en 2001 par Inès et Stéphane, notre objectif est de partager notre amour du vinyle avec le plus grand
-      nombre. <br>
-      Depuis nos débuts, nous avons parcouru un long chemin et nous sommes fiers d'être aujourd'hui l'un des leaders de
-      la vente de
-      vinyles en France. <br>
-      Nous proposons une large sélection de vinyles neufs et d'occasion, tous styles confondus, ainsi que des services
-      de qualité à
-      nos clients.
-    </div>
-  </section>
+    <span class="text-xl font-bold text-center md:text-4xl md:mt-3">Sensvinylo : Votre spécialiste du vinyle depuis
+      2001</span>
+    <p> Sensvinylo, né en 2001 de la passion commune d'Inès et Stéphane pour la musique et les vinyles, est aujourd'hui
+      l'un
+      des leaders de la vente de vinyles en France. Notre mission ? Partager notre amour du vinyle avec le plus grand
+      nombre
+      et vous offrir une expérience d'achat unique.</p>
 
+    <span class="text-lg font-semibold md:text-3xl">Un large choix de vinyles pour tous les goûts</span>
+    <p>Que vous soyez à la recherche du dernier album de votre artiste préféré ou d'un vinyle rare et vintage, vous
+      trouverez forcément votre bonheur chez Sensvinylo. Nous proposons une large sélection de vinyles neufs et
+      d'occasion, tous styles confondus : rock, pop, jazz, classique, électro, bandes originales de films...</p>
+
+    <span class="text-lg font-semibold md:text-3xl">Des services de qualité pour une expérience client optimale</span>
+    <p class="xl:self-start">En plus de notre large sélection de vinyles, nous vous proposons des services de qualité
+      pour vous accompagner
+      tout au long de votre expérience d'achat :</p>
+    <li class="xl:self-start"><span class="font-semibold">Conseils personnalisés</span>: notre équipe de passionnés est
+      à votre disposition
+      pour vous conseiller et vous aider à
+      trouver le vinyle parfait pour vos besoins.</li>
+    <li class="xl:self-start"><span class="font-semibold">Livraison rapide et sécurisée</span>: nous expédions vos
+      vinyles dans les meilleurs
+      délais et avec le plus grand soin.</li>
+    <li class="xl:self-start"><span class="font-semibold">Paiement sécurisé</span>: vous pouvez régler votre commande en
+      toute sécurité par
+      carte bancaire, PayPal ou virement bancaire.</li>
+    <li class="xl:self-start"><span class="font-semibold">Service après-vente</span>: nous sommes à votre disposition
+      pour répondre à toutes
+      vos questions et pour vous aider en cas de problème.</li>
+    <span class="text-lg font-semibold md:text-3xl">Sensvinylo : bien plus qu'un simple magasin de vinyles</span>
+    <p>Sensvinylo, c'est aussi <b>une communauté de passionnés de vinyles</b>. Nous organisons régulièrement des
+      événements
+      dans
+      notre boutique, tels que des soirées d'écoute, des concerts et des rencontres avec des artistes.</p>
+    <span class="text-lg font-semibold md:text-3xl">Votre passion du vinyle, notre expertise</span>
+    <p class="xl:self-start"> Que vous soyez un collectionneur chevronné ou un simple amateur de musique, Sensvinylo est
+      votre adresse
+      incontournable pour tout ce qui concerne le vinyle. <br>
+      Rendez-nous visite dans notre boutique ou consultez notre site web pour
+      découvrir notre univers.
+    </p>
+    <span class="text-lg font-semibold md:text-3xl">Sensvinylo : le paradis des amoureux du vinyle</span>
+  </section>
   <div
     class="w-full h-36 md:h-48 bg-black flex flex-col items-center justify-center text-white font-bold dark:bg-transparent dark:border-t dark:border-b dark:border-white">
     <span class="md:text-3xl">Des vinyles pour tous les goûts et tous les budgets !</span>

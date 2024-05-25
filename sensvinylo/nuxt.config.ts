@@ -145,6 +145,11 @@ export default defineNuxtConfig({
           type: "image/webp",
         },
         {
+          src: "logo-512x512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+        {
           src: "logo-512x512.webp",
           sizes: "512x512",
           type: "image/webp",
@@ -163,6 +168,7 @@ export default defineNuxtConfig({
         },
       ],
       theme_color: "#e97c2f",
+      background_color: "#000000",
     },
     workbox: {
       navigateFallback: "/",

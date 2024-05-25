@@ -15,42 +15,6 @@
   transform: translateX(0);
 }
 
-.custom-title::before  {
-  content: "";
-  display: inline-flex;
-  width: 28px;
-  height: 6px;
-  margin-right: 4px;
-  background-color: #f0e52b;
-  position: absolute;
-  top: 50%;
-  transform: translate(-34px,-50%);
-  }
-.custom-title::after  {
-  content: "";
-  display: inline-flex;
-  width: 28px;
-  height: 6px;
-  margin-left: 40px;
-  background-color: #f0e52b;
-  position: absolute;
-  top: 50%;
-  transform: translate(-34px,-50%);
-  }
-
-.custom-list span::before {
-  content: "";
-  display: inline-flex;
-  width: 10px;
-  height: 6px;
-  margin-right: 4px;
-  background-color: #f0e52b;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translate(-34px,-50%);
-}
-
 .label-required::after {
   content: "*";
   color: #e52828;
