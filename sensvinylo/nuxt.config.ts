@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       { loc: "/artist/camila-cabello" },
       { loc: "/artist/imagine-dragons" },
       { loc: "/artist/bon-jovi" },
-      { loc: "/artist/troye-sivan" }
+      { loc: "/artist/troye-sivan" },
     ],
   },
   robots: {},
@@ -101,10 +101,87 @@ export default defineNuxtConfig({
     //   "2xl": 1536,
     // },
   },
-  modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/seo"],
+  modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/seo", "@vite-pwa/nuxt"],
   css: ["~/assets/css/main.css"],
   plugins: ["~/plugins/error-handler.ts"],
   tailwindcss: {
     configPath: "~/tailwind.config.ts",
+  },
+  pwa: {
+    manifest: {
+      name: "Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France",
+      short_name: "Sensvinylo",
+      description:
+        "Sensvinylo, le paradis des vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de vos artistes préférés en exclusivité chez Sensvinylo.",
+      icons: [
+        {
+          src: "logo-64x64.webp",
+          sizes: "64x64",
+          type: "image/webp",
+        },
+        {
+          src: "logo-120x120.webp",
+          sizes: "120x120",
+          type: "image/webp",
+        },
+        {
+          src: "logo-144x144.webp",
+          sizes: "144x144",
+          type: "image/webp",
+        },
+        {
+          src: "logo-152x152.webp",
+          sizes: "152x152",
+          type: "image/webp",
+        },
+        {
+          src: "logo-192x192.webp",
+          sizes: "192x192",
+          type: "image/webp",
+        },
+        {
+          src: "logo-384x384.webp",
+          sizes: "384x384",
+          type: "image/webp",
+        },
+        {
+          src: "logo-512x512.webp",
+          sizes: "512x512",
+          type: "image/webp",
+        },
+        {
+          src: "logo-512x512.webp",
+          sizes: "512x512",
+          type: "image/webp",
+          purpose: "any",
+        },
+        {
+          src: "logo-512x512.webp",
+          sizes: "512x512",
+          type: "image/webp",
+          purpose: "maskable",
+        },
+      ],
+      theme_color: "#e97c2f",
+    },
+    workbox: {
+      navigateFallback: "/",
+      globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+    },
+    devOptions: {
+      enabled: true,
+      suppressWarnings: true,
+      navigateFallback: "/",
+      navigateFallbackAllowlist: [/^\/$/],
+      type: "module",
+    },
+    injectRegister: "auto",
+    registerType: "autoUpdate",
+    injectManifest: {
+      globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+    },
+    client: {
+      installPrompt: true,
+    },
   },
 });
