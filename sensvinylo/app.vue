@@ -7,6 +7,9 @@ useHead({
     { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' },
     { rel: 'manifest', href: '/manifest.webmanifest' },
   ],
+  meta : [
+    { name: 'theme-color', content: '#e97c2f'},
+  ]
 })
 </script>
 
