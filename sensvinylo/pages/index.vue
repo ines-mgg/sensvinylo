@@ -40,19 +40,23 @@ useSeoMeta({
     <p class="xl:self-start">En plus de notre large sélection de vinyles, nous vous proposons des services de qualité
       pour vous accompagner
       tout au long de votre expérience d'achat :</p>
-    <li class="xl:self-start"><span class="font-semibold">Conseils personnalisés</span>: notre équipe de passionnés est
-      à votre disposition
-      pour vous conseiller et vous aider à
-      trouver le vinyle parfait pour vos besoins.</li>
-    <li class="xl:self-start"><span class="font-semibold">Livraison rapide et sécurisée</span>: nous expédions vos
-      vinyles dans les meilleurs
-      délais et avec le plus grand soin.</li>
-    <li class="xl:self-start"><span class="font-semibold">Paiement sécurisé</span>: vous pouvez régler votre commande en
-      toute sécurité par
-      carte bancaire, PayPal ou virement bancaire.</li>
-    <li class="xl:self-start"><span class="font-semibold">Service après-vente</span>: nous sommes à votre disposition
-      pour répondre à toutes
-      vos questions et pour vous aider en cas de problème.</li>
+    <ul>
+      <li class="xl:self-start"><span class="font-semibold">Conseils personnalisés</span>: notre équipe de passionnés
+        est
+        à votre disposition
+        pour vous conseiller et vous aider à
+        trouver le vinyle parfait pour vos besoins.</li>
+      <li class="xl:self-start"><span class="font-semibold">Livraison rapide et sécurisée</span>: nous expédions vos
+        vinyles dans les meilleurs
+        délais et avec le plus grand soin.</li>
+      <li class="xl:self-start"><span class="font-semibold">Paiement sécurisé</span>: vous pouvez régler votre commande
+        en
+        toute sécurité par
+        carte bancaire, PayPal ou virement bancaire.</li>
+      <li class="xl:self-start"><span class="font-semibold">Service après-vente</span>: nous sommes à votre disposition
+        pour répondre à toutes
+        vos questions et pour vous aider en cas de problème.</li>
+    </ul>
     <span class="text-lg font-semibold md:text-3xl">Sensvinylo : bien plus qu'un simple magasin de vinyles</span>
     <p>Sensvinylo, c'est aussi <b>une communauté de passionnés de vinyles</b>. Nous organisons régulièrement des
       événements
