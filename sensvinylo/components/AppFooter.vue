@@ -13,12 +13,10 @@ import AppToggleFooter from './AppToggleFooter.vue';
       :buttonTitle="'Contact'" 
       :links="[{ link: 'contact', title: 'Contactez-nous' }, 
         {link: 'FAQ', title: 'Foire à questions' }]"/>     
-    <div class="flex flex-col">
-      <span class="mb-2">Joindre notre newsletter</span>
+      Joindre notre newsletter
       <section class="flex gap-2">
         <input type="email" placeholder="Votre email" class="border border-solid rounded border-black dark:border-white dark:border-2 mr-1 h-10 w-max text-sm pl-1"/>
         <button class="border-yellow-400 border rounded-lg text-center font-bold px-3" aria-label="Inscription à la newsletter">S'inscrire</button>
       </section>
-    </div>
   </footer>
 </template>
