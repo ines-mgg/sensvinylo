@@ -3,7 +3,7 @@ const stores = ref([
   {
     id: 1,
     city: "Paris",
-    address: "23 Rue de Turenne, 75004 Paris",
+    address: "225ter Rue du Faubourg Saint-Antoine, 75012 Paris",
     description:
       "Découvrez notre large sélection de vinyles neufs et d'occasion à Paris, dans le 4ème arrondissement. Sensvinylo, un large choix pour les amateurs de musique de tous styles.",
   },
