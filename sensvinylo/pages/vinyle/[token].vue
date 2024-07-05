@@ -50,7 +50,7 @@ watchEffect(() => {
           { 
             price: item.value.price,
             priceCurrency: 'EUR',
-            availability: 'http://schema.org/InStock',
+            availability: 'InStock',
             url: window.location.href,
           },
         ],
