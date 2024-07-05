@@ -1,10 +1,30 @@
 <script setup lang="ts">
 import AppCarousel from '~/components/AppCarousel.vue';
 
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://sensvinylo-store.com/' }
+  ],
+})
 useSeoMeta({
   title: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+  ogTitle: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
   description: 'Sensvinylo, le paradis des vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d\'occasion, tous styles confondus. Les vinyles de vos artistes préférés en exclusivité chez Sensvinylo.',
+  ogDescription: 'Sensvinylo, le paradis des vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d\'occasion, tous styles confondus. Les vinyles de vos artistes préférés en exclusivité chez Sensvinylo.',
+  ogImage: '/banner.webp',
+  twitterCard: 'summary_large_image',
 })
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'WebPage',
+    url: 'https://sensvinylo-store.com/',
+    name: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+    description: 'Sensvinylo, le paradis des vinyles à Paris et en Ile-de-France. Découvrez notre large choix de vinyles neufs et d\'occasion, tous styles confondus. Les vinyles de vos artistes préférés en exclusivité chez Sensvinylo.',
+    inLanguage: 'fr-FR',
+    primaryImageOfPage: '/banner.webp',
+  }),
+])
 </script>
 
 <template>

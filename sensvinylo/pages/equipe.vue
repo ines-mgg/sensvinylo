@@ -1,29 +1,30 @@
 <script setup lang="ts">
-const peoples = [
-  {
-    name: "Inès MAGANGA",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Inès a toujours eu une oreille fine pour la musique, passion qu'elle a héritée de ses parents collectionneurs de vinyles. Avant de cofonder Sensvinylo, elle a travaillé dans l'industrie musicale où elle a développé une compréhension profonde des tendances musicales et des besoins des mélomanes. Inès est le cœur créatif de Sensvinylo, s'assurant que chaque collection reflète diversité et qualité. Elle est également en charge des partenariats artistiques, contribuant à enrichir constamment notre offre de vinyles rares et collectors.",
-    xUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Stéphan GUEORGUIEFF",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Stéphan a débuté sa carrière en tant qu'ingénieur du son, une expérience qui lui a permis d'acquérir une expertise technique inégalée dans le domaine du son de haute fidélité. Co-fondateur de Sensvinylo, il est la force motrice derrière la qualité exceptionnelle de nos services. Stéphan est passionné par l'optimisation de l'expérience client, depuis la navigation sur notre site jusqu'à la satisfaction post-achat. Il est également à l'avant-garde des initiatives éco-responsables de Sensvinylo, cherchant toujours à minimiser notre impact environnemental.",
-    xUrl: "#",
-    linkedinUrl: "#",
-  },
-];
-
 useSeoMeta({
   title: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
+  ogTitle: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
   description:
     "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
+  ogDescription: "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
+  ogImage: "/banner.webp",
+  twitterCard: "summary_large_image",
+});
+
+useSchemaOrg([
+  defineWebPage({
+    "@type": "WebPage",
+    url: "https://sensvinylo-store.com/equipe",
+    name: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
+    description:
+      "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
+    inLanguage: "fr-FR",
+  }),
+]);
+
+const peoples = ref([]);
+onMounted(async () => {
+  const response = await fetch("/database.json");
+  const data = await response.json();
+  peoples.value = data.peoples;
 });
 </script>
 

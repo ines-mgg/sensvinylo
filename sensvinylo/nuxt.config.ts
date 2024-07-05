@@ -101,7 +101,12 @@ export default defineNuxtConfig({
     //   "2xl": 1536,
     // },
   },
-  modules: ["@nuxt/ui", "@nuxt/image", "@nuxtjs/seo", "@vite-pwa/nuxt"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxt/image",
+    "@nuxtjs/seo",
+    "@vite-pwa/nuxt",
+  ],
   css: ["~/assets/css/main.css"],
   plugins: ["~/plugins/error-handler.ts"],
   tailwindcss: {

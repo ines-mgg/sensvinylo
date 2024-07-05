@@ -3,8 +3,22 @@ import AppToggleList from '~/components/AppToggleList.vue';
 
 useSeoMeta({ 
   title: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
-  description: 'Les engagements de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre mission, notre vision, nos valeurs et nos engagements.'
+  ogTitle: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+  description: 'Les engagements de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre mission, notre vision, nos valeurs et nos engagements.',
+  ogDescription: 'Les engagements de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre mission, notre vision, nos valeurs et nos engagements.',
+  ogImage: '/banner.webp',
+  twitterCard: 'summary_large_image',
 }) 
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'WebPage',
+    url: 'https://sensvinylo-store.com/engagement',
+    name: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+    description: 'Les engagements de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre mission, notre vision, nos valeurs et nos engagements.',
+    inLanguage: 'fr-FR',
+  }),
+])
 </script>
 
 <template>

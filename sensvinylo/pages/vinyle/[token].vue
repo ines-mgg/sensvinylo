@@ -28,8 +28,51 @@ watchEffect(() => {
   if (item.value && artistItem.value) {
     useSeoMeta({
       title: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
-      description: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`
+      ogTitle: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
+      description: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
+      ogDescription: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
+      ogImage: item.value.image,
+      twitterCard: 'summary_large_image',
     })
+    useSchemaOrg([
+      defineWebPage({
+        '@type': 'WebPage',
+        url: window.location.href,
+        name: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
+        description: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
+        inLanguage: 'fr-FR',
+      }),
+      defineProduct({
+        name: item.value.title,
+        description: item.value.description,
+        image: item.value.image,
+        offers: [
+          { 
+            price: item.value.price,
+            priceCurrency: 'EUR',
+            availability: 'http://schema.org/InStock',
+            url: window.location.href,
+          },
+        ],
+        brand: {
+          name: artistItem.value.name,
+        },
+        sku: item.value.token,
+        seller: {
+          '@type': 'Organization',
+          name: 'Sensvinylo',
+        },
+        manufacturer: {
+          '@type': 'Organization',
+          name: 'Sensvinylo',
+        },
+      }),
+      defineImage({
+        url: item.value.image,
+        caption: item.value.title,
+        inLanguage: 'fr-FR',
+      }),
+    ])
   }
 })
 
@@ -86,7 +129,8 @@ onUnmounted(() => {
     <div v-else-if="item?.status === 'Occasion'"
       class="bg-red-600 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
     <span class="text-xl font-bold text-center md:text-xl">
-      <NuxtLink v-if="artistItem" :to="`/artist/${artistItem.slug}`" class="text-orange-500 underline">{{ artistItem.name }}</NuxtLink>
+      <NuxtLink v-if="artistItem" :to="`/artist/${artistItem.slug}`" class="text-orange-500 underline">{{
+        artistItem.name }}</NuxtLink>
       - {{ item?.title }}
     </span>
     <span class="text-xs font-bold text-center italic md:text-lg">{{ item?.year }} - {{ genreItem?.name }}</span>

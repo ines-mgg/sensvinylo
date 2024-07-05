@@ -29,8 +29,27 @@ watchEffect(() => {
     if (item.value) {
         useSeoMeta({
             title: `${item.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
-            description: `${item.value.name} chez Sensvinylo. Découvrez sa biographie et discographie. Les vinyles de ${item.value.name} en exclusivité chez Sensvinylo.`
+            ogTitle: `${item.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
+            description: `${item.value.name} chez Sensvinylo. Découvrez sa biographie et discographie. Les vinyles de ${item.value.name} en exclusivité chez Sensvinylo.`,
+            ogDescription: `${item.value.name} chez Sensvinylo. Découvrez sa biographie et discographie. Les vinyles de ${item.value.name} en exclusivité chez Sensvinylo.`,
+            ogImage: item.value.image,
+            twitterCard: 'summary_large_image',
         })
+        useSchemaOrg([
+            defineWebPage({
+                '@type': 'WebPage',
+                url: `https://sensvinylo-store.com/artist/${item.value.slug}`,
+                name: `${item.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
+                description: `${item.value.name} chez Sensvinylo. Découvrez sa biographie et discographie. Les vinyles de ${item.value.name} en exclusivité chez Sensvinylo.`,
+                inLanguage: 'fr-FR',
+            }),
+            defineImage({
+                url: item.value.image,
+                caption: item.value.name,
+                width: 500,
+                height: 500,
+            }),
+        ])
     }
 })
 </script>

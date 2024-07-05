@@ -1,8 +1,22 @@
 <script setup lang="ts">
 useSeoMeta({ 
   title: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
-  description: 'Les mentions légales et conditions de ventes de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France.'
-}) 
+  ogTitle: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+  description: 'Les mentions légales et conditions de ventes de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France.',
+  ogDescription: 'Les mentions légales et conditions de ventes de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France.',
+  ogImage: '/banner.webp',
+  twitterCard: 'summary_large_image',
+})
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'WebPage',
+    url: 'https://sensvinylo-store.com/mentions-legales',
+    name: 'Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France',
+    description: 'Les mentions légales et conditions de ventes de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France.',
+    inLanguage: 'fr-FR',
+  }),
+])
 </script>
 
 <template>
