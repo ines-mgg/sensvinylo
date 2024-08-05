@@ -15,7 +15,7 @@
     "@nuxt/image": "^1.5.0",
     "@nuxt/ui": "^2.15.1",
     "@vite-pwa/nuxt": "^0.7.0",
-    "nuxt": "^3.11.2",
+    "nuxt": "^3.12.4",
     "swiper": "^8.4.7",
     "vue": "^3.4.21",
     "vue-awesome-swiper": "^5.0.1",
