@@ -23,11 +23,11 @@ TypeScript - Vue - Nuxt - Tailwind CSS
 
 | Couleur principale             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Red| ![#e52828](https://via.placeholder.com/10/e52828?text=+) #e52828 |
-| Orange | ![#e97c2f](https://via.placeholder.com/10/e97c2f?text=+) #e97c2f |
-| Yellow | ![#f0e52b](https://via.placeholder.com/10/f0e52b?text=+) #f0e52b |
-| Black | ![#1C1C1A](https://via.placeholder.com/10/1C1C1A?text=+) #1C1C1A |
-| White | ![#F9F9F9](https://via.placeholder.com/10/F9F9F9?text=+) #F9F9F9 |
+| Red| ![#e52828](https://via.placeholder.com/10/E52828?text=+) #e52828 |
+| Orange | ![#e97c2f](https://via.placeholder.com/10/E97C2F?text=+) #e97c2f |
+| Yellow | ![#f0e52b](https://via.placeholder.com/10/F0E52B?text=+) #f0e52b |
+| Black | ![#00000](https://via.placeholder.com/10/000?text=+) #000000 |
+| White | ![#FFFFFF](https://via.placeholder.com/10/fff?text=+) #FFFFFF |
 
 ## Authors
 - [Inès](https://github.com/ines-mgg)
