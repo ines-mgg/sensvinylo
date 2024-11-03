@@ -1,0 +1,1 @@
+import type { Config } from "tailwindcss"; export default <Partial<Config>>{theme: {extend: {colors: {red: {600: "#e52828",},yellow: {400: "#f0e52b",},orange: {500: "#e97c2f",},},},},};
