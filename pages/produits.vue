@@ -2,8 +2,8 @@
 import AppCard from '@/components/AppCard.vue';
 import { getVinyls } from '#imports';
 import type Vinyl from '~/interfaces/vinyl';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Vinyles Pop, Rock, Rap & Musique du Monde – Sensvinylo";
 const description = "Achetez des vinyles pas chers en ligne sur sensvinylo-store.com. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus.";

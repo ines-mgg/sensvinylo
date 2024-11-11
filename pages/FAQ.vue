@@ -3,9 +3,9 @@
 import AppToggle from '~/components/AppToggle.vue';
 import { getFAQ } from '#imports';
 import type FAQ from '~/interfaces/FAQ';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
-import getDefinedQuestion from '~/Meta/getDefinedQuestion';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
+import getDefinedQuestion from '~/meta/getDefinedQuestion';
 
 const title = "Sensvinylo FAQ - Votre Disquaire de Vinyles à Paris et en Ile-de-France";
 const description = "Les réponses à vos questions sur Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre FAQ pour tout savoir sur nos produits et services.";

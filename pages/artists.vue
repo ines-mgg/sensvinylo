@@ -3,8 +3,8 @@
 import AppArtistCard from '@/components/AppArtistCard.vue';
 import type Artist from '~/interfaces/artist';
 import { getArtists } from '#imports';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Artistes de Sensvinylo - Biographie, Discographie & Vinyles en Vente - Sensvinylo";
 const description = "Découvrez les artistes de Sensvinylo, leur biographie, discographie et les vinyles disponibles à la vente sur sensvinylo-store.com.";

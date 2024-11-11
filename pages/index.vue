@@ -2,10 +2,10 @@
 
 import AppCarousel from '@/components/AppCarousel.vue';
 import type Vinyl from '~/interfaces/vinyl';
-import getSeoMeta from '~/Meta/getSeoMeta';
+import getSeoMeta from '~/meta/getSeoMeta';
 import { getFirstVinyls } from '#imports';
-import getDefinedPage from '~/Meta/getDefinedPage';
-import getDefinedItemList from '~/Meta/getDefinedItemList';
+import getDefinedPage from '~/meta/getDefinedPage';
+import getDefinedItemList from '~/meta/getDefinedItemList';
 
 useHead({
   link: [

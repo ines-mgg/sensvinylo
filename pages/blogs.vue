@@ -3,8 +3,8 @@
 import AppBlogCard from '~/components/AppBlogCard.vue';
 import { getArticles } from '#imports';
 import type Article from '~/interfaces/article';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Découvrez les articles de blog signé Sensvinylo";
 const description = "Lisez les derniers articles du blog Sensvinylo. Retrouvez des conseils et astuces pour les collectionneurs de vinyles, des interviews d\'artistes et des actualités du monde du vinyle.";

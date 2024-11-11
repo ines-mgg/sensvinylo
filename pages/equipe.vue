@@ -2,8 +2,8 @@
 
 import type People from "~/interfaces/people";
 import { getPeople } from "#imports";
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris";
 const description = "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.";

@@ -4,9 +4,9 @@ import { useRoute } from 'vue-router'
 import type Article from '~/interfaces/article';
 import getArticle from '~/utils/getArticle';
 import getOtherArticles from '~/utils/getOtherArticles';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
-import getDefinedArticle from '~/Meta/getDefinedArticle';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
+import getDefinedArticle from '~/meta/getDefinedArticle';
 
 const { slug } = useRoute().params
 const article = ref<Article | null>(null)

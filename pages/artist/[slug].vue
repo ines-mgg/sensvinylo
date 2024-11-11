@@ -5,8 +5,8 @@ import type Artist from '~/interfaces/artist';
 import type Genre from '~/interfaces/genre';
 import type Vinyl from '~/interfaces/vinyl';
 import { getArtist, getGenre, getArtistVinyls } from '#imports';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const { slug } = useRoute().params
 const artist = ref<Artist | null>(null)

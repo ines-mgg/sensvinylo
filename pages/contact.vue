@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Sensvinylo - Contactez-nous pour toutes vos questions";
 const description = "Contactez Sensvinylo par email, téléphone ou courrier pour toutes vos questions et demandes.";

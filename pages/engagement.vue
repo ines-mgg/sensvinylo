@@ -3,8 +3,8 @@
 import AppToggleList from '~/components/AppToggleList.vue';
 import type Engagement from '~/interfaces/engagement';
 import { getEngagements } from '#imports';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France";
 const description = "Les engagements de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France. Découvrez notre mission, notre vision, nos valeurs et nos engagements.";

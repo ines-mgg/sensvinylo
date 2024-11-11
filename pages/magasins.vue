@@ -2,8 +2,8 @@
 
 import type Store from '~/interfaces/store';
 import { getStores } from '#imports';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Trouvez le Magasin Sensvinylo le Plus Proche de Chez Vous";
 const description = "Trouvez le magasin Sensvinylo le plus proche de chez vous. Nous avons plusieurs points de vente à Paris et en Ile-de-France.";

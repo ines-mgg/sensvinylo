@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
 
+import updateDimensions from '~/utils/updateDimensions';
 const props = defineProps({
     cardBanner: String,
     cardImage: String,
@@ -10,25 +10,7 @@ const props = defineProps({
     cardToken: String,
 })
 
-const width = ref(250);
-const height = ref(250);
-
-const updateDimensions = () => {
-    switch (true) {
-        case window.innerWidth >= 1280:
-            width.value = 700;
-            height.value = 700;
-            break;
-        case window.innerWidth >= 768:
-            width.value = 500;
-            height.value = 500;
-            break;
-        default:
-            width.value = 250;
-            height.value = 250;
-            break;
-    }
-}
+const { width, height } = updateDimensions();
 
 onMounted(() => {
     window.addEventListener('resize', updateDimensions);

@@ -7,9 +7,10 @@ import type Genre from '~/interfaces/genre';
 import getVinyl from '~/utils/getVinyl';
 import getGenre from '~/utils/getGenre';
 import getArtist from '~/utils/getArtist';
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
-import getDefinedProduct from '~/Meta/getDefinedProduct';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
+import getDefinedProduct from '~/meta/getDefinedProduct';
+import updateDimensions from '~/utils/updateDimensions';
 
 
 const { token } = useRoute().params
@@ -18,7 +19,25 @@ const artist = ref<Artist | null>(null)
 const genre = ref<Genre | null>(null)
 const quantity = ref(1)
 
+const increaseQuantity = () => {
+  if (quantity.value < 10) {
+    quantity.value++
+  }
+}
+
+const decreaseQuantity = () => {
+  if (quantity.value > 1) {
+    quantity.value--
+  }
+}
+
+const { width, height } = updateDimensions();
+
 onMounted(async () => {
+
+  window.addEventListener('resize', updateDimensions);
+  updateDimensions();
+
   vinyl.value = getVinyl(Array.isArray(token) ? token : [token]);
   if (vinyl.value) {
     artist.value = getArtist(vinyl.value.artist);
@@ -47,43 +66,6 @@ onMounted(async () => {
       status: 404,
     });
   }
-})
-
-const increaseQuantity = () => {
-  if (quantity.value < 10) {
-    quantity.value++
-  }
-}
-
-const decreaseQuantity = () => {
-  if (quantity.value > 1) {
-    quantity.value--
-  }
-}
-
-const width = ref(250);
-const height = ref(250);
-
-const updateDimensions = () => {
-  switch (true) {
-    case window.innerWidth >= 1280:
-      width.value = 700;
-      height.value = 700;
-      break;
-    case window.innerWidth >= 768:
-      width.value = 500;
-      height.value = 500;
-      break;
-    default:
-      width.value = 250;
-      height.value = 250;
-      break;
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('resize', updateDimensions);
-  updateDimensions();
 });
 
 onUnmounted(() => {

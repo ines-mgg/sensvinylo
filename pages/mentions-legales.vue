@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
-import getSeoMeta from '~/Meta/getSeoMeta';
-import getDefinedPage from '~/Meta/getDefinedPage';
+import getSeoMeta from '~/meta/getSeoMeta';
+import getDefinedPage from '~/meta/getDefinedPage';
 
 const title = "Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France";
 const description = "Les mentions légales et conditions de ventes de Sensvinylo, votre disquaire de vinyles à Paris et en Ile-de-France.";
