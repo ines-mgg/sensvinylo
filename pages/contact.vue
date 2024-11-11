@@ -1,30 +1,25 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import getSeoMeta from '~/Meta/getSeoMeta';
+import getDefinedPage from '~/Meta/getDefinedPage';
 
+const title = "Sensvinylo - Contactez-nous pour toutes vos questions";
+const description = "Contactez Sensvinylo par email, téléphone ou courrier pour toutes vos questions et demandes.";
+getSeoMeta(title, description);
+
+useSchemaOrg([
+    getDefinedPage(
+        `${window.location.origin}/contact`,
+        title,
+        description
+    ),
+])
 const showMessage = ref(false)
 
 const submitForm = () => {
     showMessage.value = true
 }
 
-useSeoMeta({
-    title: 'Sensvinylo - Contactez-nous pour toutes vos questions',
-    ogTitle: 'Sensvinylo - Contactez-nous pour toutes vos questions',
-    description: 'Contactez Sensvinylo par email, téléphone ou courrier pour toutes vos questions et demandes.',
-    ogDescription: 'Contactez Sensvinylo par email, téléphone ou courrier pour toutes vos questions et demandes.',
-    ogImage: '/banner.webp',
-    twitterCard: 'summary_large_image',
-})
-
-useSchemaOrg([
-    defineWebPage({
-        '@type': 'ContactPage',
-        url: 'https://sensvinylo-store.com/contact',
-        name: 'Sensvinylo - Contactez-nous pour toutes vos questions',
-        description: 'Contactez Sensvinylo par email, téléphone ou courrier pour toutes vos questions et demandes.',
-        inLanguage: 'fr-FR',
-    }),
-])
 </script>
 
 <template>

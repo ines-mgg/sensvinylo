@@ -1,37 +1,23 @@
 <script setup lang="ts">
-import AppCard from './AppCard.vue';
+
 import { ref, onMounted } from 'vue';
-import database from '../assets/database.json'
+import AppCard from './AppCard.vue';
+import type Vinyl from "../interfaces/vinyl";
 
-interface Card {
-  status: string | null;
-  image: string;
-  title: string;
-  price: number;
-  old_price: number | null;
-  token: string;
-}
-
-const cards = ref<Card[]>([])
-onMounted(() => {
-  try {
-    cards.value = database.vinyles.slice(0, 10); 
-  } catch (error) {
-    console.error('Error loading data:', error);
-  }
-});
-
+const props = defineProps<{
+  vinyls: Vinyl[]
+}>();
 
 const currentIndex = ref(0);
 
 const nextSlide = () => {
-  if (cards.value) {
-    currentIndex.value = (currentIndex.value + 1) % cards.value.length;
+  if (props.vinyls) {
+    currentIndex.value = (currentIndex.value + 1) % props.vinyls.length;
   }
 };
 const prevSlide = () => {
-  if (cards.value) {
-    currentIndex.value = (currentIndex.value - 1 + cards.value.length) % cards.value.length;
+  if (props.vinyls) {
+    currentIndex.value = (currentIndex.value - 1 + props.vinyls.length) % props.vinyls.length;
   }
 };
 
@@ -44,9 +30,9 @@ defineExpose({
 <template>
   <div class="carousel relative my-2">
     <div class="carousel-inner pt-2" :style="{ 'transform': `translateX(-${currentIndex * 100}%)` }">
-      <div v-for="(card, index) in cards" :key="index" class="carousel-item">
-        <AppCard :cardBanner="card.status ?? undefined" :cardImage="card.image" :cardTitle="card.title" :cardPrice="card.price"
-          :cardOldPrice="card.old_price ?? undefined" :cardToken="card.token" />
+      <div v-for="(vinyl, index) in vinyls" :key="index" class="carousel-item">
+        <AppCard :cardBanner="vinyl.status ?? undefined" :cardImage="vinyl.image" :cardTitle="vinyl.title" :cardPrice="vinyl.price"
+          :cardOldPrice="vinyl.old_price ?? undefined" :cardToken="vinyl.token" />
       </div>
     </div>
     <button @click="prevSlide" class="absolute top-1/2 
@@ -61,7 +47,7 @@ defineExpose({
     <button @click="nextSlide" class="absolute top-1/2 
       transform -translate-y-1/2 
       right-0 border dark:text-white 
-      dark:border-white p-4 mr-4" v-if="currentIndex < cards.length - 1" aria-label="Bouton suivant">
+      dark:border-white p-4 mr-4" v-if="currentIndex < vinyls.length - 1" aria-label="Bouton suivant">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />

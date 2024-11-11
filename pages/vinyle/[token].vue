@@ -1,105 +1,51 @@
 <script setup lang="ts">
+
 import { useRoute } from 'vue-router'
-import { onMounted, ref, watchEffect } from 'vue'
-import database from '../../assets/database.json'
+import type Vinyl from '~/interfaces/vinyl';
+import type Artist from '~/interfaces/artist';
+import type Genre from '~/interfaces/genre';
+import getVinyl from '~/utils/getVinyl';
+import getGenre from '~/utils/getGenre';
+import getArtist from '~/utils/getArtist';
+import getSeoMeta from '~/Meta/getSeoMeta';
+import getDefinedPage from '~/Meta/getDefinedPage';
+import getDefinedProduct from '~/Meta/getDefinedProduct';
 
-const route = useRoute()
-interface Vinyl {
-  id: number;
-  status: string | null;
-  image: string;
-  title: string;
-  artist: number;
-  year: number;
-  genre: number;
-  price: number;
-  old_price: number | null;
-  description: string;
-  token: string;
-}
 
-const item = ref<Vinyl | undefined>(undefined)
-interface Artist {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-  genre: number;
-  slug: string;
-  discography: { title: string; year: number; }[];
-}
-
-interface Genre {
-  id: number;
-  name: string;
-}
-
-const artistItem = ref<Artist | undefined>(undefined)
-const genreItem = ref<Genre | undefined>(undefined)
+const { token } = useRoute().params
+const vinyl = ref<Vinyl | null>(null)
+const artist = ref<Artist | null>(null)
+const genre = ref<Genre | null>(null)
 const quantity = ref(1)
 
 onMounted(async () => {
-  const { token } = route.params
-  item.value = database.vinyles.find(vinyl => vinyl.token === token) as Vinyl
-  artistItem.value = database.artists.find(artist => artist.id === item.value?.artist)
-  genreItem.value = database.genres.find(genre => genre.id === item.value?.genre)
+  vinyl.value = getVinyl(Array.isArray(token) ? token : [token]);
+  if (vinyl.value) {
+    artist.value = getArtist(vinyl.value.artist);
+    genre.value = getGenre(vinyl.value.genre);
+    if (artist.value) {
+      const title = `${vinyl.value.title} par ${artist.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`;
+      const description = `${vinyl.value.title} par ${artist.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artist.value.name} en exclusivité chez Sensvinylo.`;
+      getSeoMeta(title, description);
 
-  if (!item.value) {
+      useSchemaOrg([
+        getDefinedPage(
+          `${window.location.origin}/vinyle/${vinyl.value.token}`,
+          title,
+          description
+        ),
+        getDefinedProduct(vinyl.value),
+        defineImage({
+          url: vinyl.value.image,
+          caption: vinyl.value.title,
+          inLanguage: 'fr-FR',
+        }),
+      ])
+    }
+  } else {
     throw createError({
       status: 404,
     });
-  }
-})
-
-watchEffect(() => {
-  if (item.value && artistItem.value) {
-    useSeoMeta({
-      title: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
-      ogTitle: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
-      description: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
-      ogDescription: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
-      ogImage: item.value.image,
-      twitterCard: 'summary_large_image',
-    })
-    useSchemaOrg([
-      defineWebPage({
-        '@type': 'WebPage',
-        url: window.location.href,
-        name: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo - Votre Disquaire de Vinyles à Paris et en Ile-de-France`,
-        description: `${item.value.title} par ${artistItem.value.name} chez Sensvinylo. Découvrez notre large choix de vinyles neufs et d'occasion, tous styles confondus. Les vinyles de ${artistItem.value.name} en exclusivité chez Sensvinylo.`,
-        inLanguage: 'fr-FR',
-      }),
-      defineProduct({
-        name: item.value.title,
-        description: item.value.description,
-        image: item.value.image,
-        offers: [
-          { 
-            price: item.value.price,
-            priceCurrency: 'EUR',
-            availability: 'InStock',
-            url: window.location.href,
-          },
-        ],
-        brand: {
-          name: artistItem.value.name,
-        },
-        sku: item.value.token,
-        seller: {
-          '@type': 'Organization',
-          name: 'Sensvinylo',
-        },
-        manufacturer: {
-          '@type': 'Organization',
-          name: 'Sensvinylo',
-        },
-      }),
-      defineImage({
-        url: item.value.image,
-        caption: item.value.title,
-        inLanguage: 'fr-FR',
-      }),
-    ])
   }
 })
 
@@ -147,25 +93,27 @@ onUnmounted(() => {
 
 <template>
   <section class="flex flex-col items-center my-4 p-2">
-    <NuxtPicture v-if="item" :src="item.image" :imgAttrs="{ alt: item.title, loading: 'lazy' }" :width="width"
+    <NuxtPicture v-if="vinyl" :src="vinyl.image" :imgAttrs="{ alt: vinyl.title, loading: 'lazy' }" :width="width"
       :height="height" sizes="sm:100vw md:100vw" />
-    <div v-if="item?.status === 'Nouveauté'"
-      class="bg-orange-500 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
-    <div v-else-if="item?.status === 'Promotion'"
-      class="bg-yellow-400 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
-    <div v-else-if="item?.status === 'Occasion'"
-      class="bg-red-600 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ item?.status }}</div>
-    <span class="text-xl font-bold text-center md:text-xl">
-      <NuxtLink v-if="artistItem" :to="`/artist/${artistItem.slug}`" class="text-orange-500 underline">{{
-        artistItem.name }}</NuxtLink>
-      - {{ item?.title }}
-    </span>
-    <span class="text-xs font-bold text-center italic md:text-lg">{{ item?.year }} - {{ genreItem?.name }}</span>
-    <div v-if="item?.status === 'Promotion' && item?.old_price !== null" class="flex gap-1 font-semibold md:text-xl">
-      <span class="line-through">{{ item?.old_price }}€</span>
-      <span class="text-red-600">{{ item?.price }}€</span>
+    <div v-if="vinyl?.status === 'Nouveauté'"
+      class="bg-orange-500 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ vinyl?.status }}
     </div>
-    <div v-else class="font-semibold md:text-xl">{{ item?.price }}€</div>
+    <div v-else-if="vinyl?.status === 'Promotion'"
+      class="bg-yellow-400 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ vinyl?.status }}
+    </div>
+    <div v-else-if="vinyl?.status === 'Occasion'"
+      class="bg-red-600 w-44 text-center font-semibold -mt-2 md:w-1/2 md:text-xl text-black">{{ vinyl?.status }}</div>
+    <span class="text-xl font-bold text-center md:text-xl">
+      <NuxtLink v-if="artist" :to="`/artist/${artist.slug}`" class="text-orange-500 underline">{{
+        artist.name }}</NuxtLink>
+      - {{ vinyl?.title }}
+    </span>
+    <span class="text-xs font-bold text-center italic md:text-lg">{{ vinyl?.year }} - {{ genre?.name }}</span>
+    <div v-if="vinyl?.status === 'Promotion' && vinyl?.old_price !== null" class="flex gap-1 font-semibold md:text-xl">
+      <span class="line-through">{{ vinyl?.old_price }}€</span>
+      <span class="text-red-600">{{ vinyl?.price }}€</span>
+    </div>
+    <div v-else class="font-semibold md:text-xl">{{ vinyl?.price }}€</div>
     <div class="flex gap-2 my-2 md:mt-4">
       <button class="border dark:text-white dark:border-white p-2" @click="decreaseQuantity"
         aria-label="Réduire la quantité">
@@ -187,8 +135,8 @@ onUnmounted(() => {
       aria-label="Ajouter le vinyle au panier">Ajouter au panier</button>
   </section>
   <section class="flex flex-col items-center my-4 p-2 md:text-xl">
-    <p class="text-justify">{{ item?.description }}</p>
+    <p class="text-justify">{{ vinyl?.description }}</p>
     <hr class="w-1/2 my-4 md:*" />
-    <p class="text-justify">{{ artistItem?.description }}</p>
+    <p class="text-justify">{{ artist?.description }}</p>
   </section>
 </template>

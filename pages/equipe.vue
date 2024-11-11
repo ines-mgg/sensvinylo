@@ -1,37 +1,29 @@
 <script setup lang="ts">
-import database from '../assets/database.json'
-useSeoMeta({
-  title: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
-  ogTitle: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
-  description:
-    "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
-  ogDescription: "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
-  ogImage: "/banner.webp",
-  twitterCard: "summary_large_image",
-});
+
+import type People from "~/interfaces/people";
+import { getPeople } from "#imports";
+import getSeoMeta from '~/Meta/getSeoMeta';
+import getDefinedPage from '~/Meta/getDefinedPage';
+
+const title = "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris";
+const description = "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.";
+getSeoMeta(title, description);
 
 useSchemaOrg([
-  defineWebPage({
-    "@type": "WebPage",
-    url: "https://sensvinylo-store.com/equipe",
-    name: "Rencontrez Notre Équipe - Sensvinylo, Experts en Vinyles à Paris",
-    description:
-      "Découvrez l'équipe experte de Sensvinylo, dirigée par Inès et Stéphan, passionnés de musique et spécialistes des vinyles. Explorez les coulisses de notre boutique en ligne et nos magasins à Paris et en Île-de-France, et rencontrez les professionnels qui font de Sensvinylo votre disquaire de confiance.",
-    inLanguage: "fr-FR",
-  }),
-]);
-interface People {
-  name: string;
-  role: string;
-  imageUrl: string;
-  bio: string;
-  xUrl: string;
-  linkedinUrl: string;
-}
+  getDefinedPage(
+    `${window.location.origin}/equipe`,
+    title,
+    description
+  ),
+])
 
-const peoples = ref<People[]>([]);
+const people = ref<People[]>([]);
 onMounted(async () => {
-  peoples.value = database.peoples;
+  try {
+    people.value = await getPeople();
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
 });
 </script>
 
@@ -56,7 +48,7 @@ onMounted(async () => {
         </p>
       </div>
       <ul role="list" class="-mt-12 space-y-12 divide-y xl:col-span-3">
-        <li v-for="person in peoples" :key="person.name" class="flex flex-col gap-10 pt-12 sm:flex-row">
+        <li v-for="person in people" :key="person.name" class="flex flex-col gap-10 pt-12 sm:flex-row">
           <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" :src="person.imageUrl"
             :alt="`photo de ${person.name}`" />
           <div class="max-w-xl flex-auto">

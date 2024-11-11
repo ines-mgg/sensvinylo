@@ -1,35 +1,31 @@
 <script setup lang="ts">
-import database from '../assets/database.json'
-useSeoMeta({
-  title: "Trouvez le Magasin Sensvinylo le Plus Proche de Chez Vous",
-  ogTitle: "Trouvez le Magasin Sensvinylo le Plus Proche de Chez Vous",
-  description:
-    "Trouvez le magasin Sensvinylo le plus proche de chez vous. Nous avons plusieurs points de vente à Paris et en Ile-de-France.",
-  ogDescription: "Trouvez le magasin Sensvinylo le plus proche de chez vous. Nous avons plusieurs points de vente à Paris et en Ile-de-France.",
-  ogImage: "/banner.webp",
-  twitterCard: "summary_large_image",
-});
+
+import type Store from '~/interfaces/store';
+import { getStores } from '#imports';
+import getSeoMeta from '~/Meta/getSeoMeta';
+import getDefinedPage from '~/Meta/getDefinedPage';
+
+const title = "Trouvez le Magasin Sensvinylo le Plus Proche de Chez Vous";
+const description = "Trouvez le magasin Sensvinylo le plus proche de chez vous. Nous avons plusieurs points de vente à Paris et en Ile-de-France.";
+getSeoMeta(title, description);
 
 useSchemaOrg([
-  defineWebPage({
-    "@type": "WebPage",
-    url: "https://sensvinylo-store.com/magasins",
-    name: "Trouvez le Magasin Sensvinylo le Plus Proche de Chez Vous",
-    description:
-      "Trouvez le magasin Sensvinylo le plus proche de chez vous. Nous avons plusieurs points de vente à Paris et en Ile-de-France.",
-    inLanguage: "fr-FR",
-  }),
+  getDefinedPage(
+    `${window.location.origin}/magasins`,
+    title,
+    description
+  )
 ]);
 
-interface Store {
-  id: number;
-  city: string;
-  address: string;
-  description: string;
-}
+
 const stores = ref<Store[]>([]);
 onMounted(async () => {
-  stores.value = database.stores;
+  try {
+    stores.value = await getStores();
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
+
 })
 </script>
 
